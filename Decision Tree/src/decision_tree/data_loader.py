@@ -2,8 +2,6 @@ import csv
 import numpy as np
 import argparse
 import os
-# from feature_def import get_feature_definitions, Feature, Column, Label
-from feature_def import get_feature_definitions
 
 # Function to load CSV data
 def load_data(file_path):
@@ -45,7 +43,7 @@ def preprocess_data(data, numeric_attributes, handle_unknown='as_value'):
 
 # Load and preprocess data for both bank and car datasets
 def load_and_preprocess_data(dataset, handle_unknown='as_value'):
-    base_path = os.path.join(os.path.dirname(__file__), '../data')
+    base_path = os.path.join(os.path.dirname(__file__), '../../data')
     
     if dataset == 'bank':
         train_path = os.path.join(base_path, 'bank/train.csv')

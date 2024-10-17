@@ -1,8 +1,9 @@
 import argparse
 import numpy as np
-from data_loader import load_and_preprocess_data
-from decision_tree import ID3, compute_error
-from feature_def import get_feature_definitions
+# from data_loader import load_and_preprocess_data
+# from decision_tree import ID3, compute_error
+from decision_tree import load_and_preprocess_data, ID3, compute_error, get_feature_definitions
+# from feature_def import get_feature_definitions
 
 # Function to print result grid
 def print_result_grid(results, max_depth, criteria):

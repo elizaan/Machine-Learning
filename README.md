@@ -5,18 +5,20 @@ This is a machine learning library developed by Ishrat Jahan Eliza for CS5350/63
 
 The repository is organized as follows:
 
-Machine Learning/
+Machine-Learning/
 │
 ├── Decision Tree/
 │   ├── data/
 │   │   ├── bank/
 │   │   └── car/
 │   └── src/
-│       ├── data_loader.py
-│       ├── decision_tree.py
-│       ├── feature_def.py
-│       ├── main.py
-│       └── tree_utils.py
+|       ├──decision_tree
+|           ├── __init__.py
+│           ├── data_loader.py
+│           ├── decision_tree.py
+│           ├── feature_def.py
+│           └── tree_utils.py
+|       ├── main.py
 │
 ├── Ensemble Learning/
 │
@@ -25,6 +27,24 @@ Machine Learning/
 - **Decision Tree**: Contains the implementation and relevant data for decision tree learning.
 - **Ensemble Learnin**g**: Reserved for future development of ensemble methods such as bagging, boosting, and random forests.
 - **Linear Regression**: Reserved for the implementation of linear regression models.
+
+## Installation
+
+In Machine-Learning Folder (parent folder):
+- For Linux/macOS
+   ```bash
+      python3 -m venv env
+      source env/bin/activate
+      pip install -r requirements.txt
+   ```
+
+- For Windows
+   ```bash
+      python3 -m venv env
+      .\env\Scripts\activate
+      pip install -r requirements.txt
+    ```   
+
 
 ## Commands to run Decision Tree
 
@@ -46,7 +66,7 @@ To run the implementation of the Decision Tree learning algorithm, follow these 
 
     In this example, the command trains a decision tree on the bank dataset with a maximum depth of 5 using the Gini Index as the split criterion.
 
-    **Parameters Description**
+    **Parameters Description**:
     Dataset (--data): Choose between bank and car datasets. bank for bank and car for car dataset
     Maximum Depth (--depth): Define the maximum depth for the tree. Takes numeroical value.
     Splitting Criteria:
@@ -54,7 +74,7 @@ To run the implementation of the Decision Tree learning algorithm, follow these 
     Entropy (--et): Measures the information gain.
     Majority Error (--me): Measures the fraction of misclassified instances.
     
-    **Results**
+    **Results:**
     Once the command runs, you will receive a tabular output displaying the error on the training and test sets.
 
 

@@ -1,9 +1,10 @@
 import numpy as np
 import copy
 import argparse
-from tree_utils import check_same_label, find_most_common_label, data_separate, best_split
-from feature_def import get_feature_definitions
-from data_loader import load_and_preprocess_data
+from .data_loader import load_and_preprocess_data
+from .feature_def import get_feature_definitions
+from .tree_utils import check_same_label, find_most_common_label, data_separate, best_split
+
 
 
 

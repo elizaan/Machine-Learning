@@ -1,11 +1,5 @@
 import numpy as np
 from collections import Counter
-from feature_def import get_feature_definitions
-
-# Load Feature Definitions Based on Dataset
-# def setup_feature_definitions(dataset):
-#     global Feature, Column, Label, Numeric_Attributes
-#     Feature, Column, Label, Numeric_Attributes = get_feature_definitions(dataset)
 
 # Check if all labels in the subset are the same
 def check_same_label(subset_idx, train_data):
