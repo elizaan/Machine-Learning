@@ -5,8 +5,6 @@ This is a machine learning library developed by Ishrat Jahan Eliza for CS5350/63
 
 The repository is organized as follows:
 
-Machine Learning/ │ ├── Decision Tree/ │ ├── data/ │ │ ├── bank/ │ │ └── car/ │ └── src/ │ ├── data_loader.py │ ├── decision_tree.py │ ├── feature_def.py │ ├── main.py │ └── tree_utils.py │ ├── Ensemble Learning/ │ └── Linear Regression/
-
 Machine Learning/
 │
 ├── Decision Tree/
@@ -24,9 +22,9 @@ Machine Learning/
 │
 └── Linear Regression/
 
-- **Decision Tree: Contains the implementation and relevant data for decision tree learning.
-- **Ensemble Learning: Reserved for future development of ensemble methods such as bagging, boosting, and random forests.
-- **Linear Regression: Reserved for the implementation of linear regression models.
+- **Decision Tree**: Contains the implementation and relevant data for decision tree learning.
+- **Ensemble Learnin**g**: Reserved for future development of ensemble methods such as bagging, boosting, and random forests.
+- **Linear Regression**: Reserved for the implementation of linear regression models.
 
 ## Commands to run Decision Tree
 
@@ -44,6 +42,8 @@ To run the implementation of the Decision Tree learning algorithm, follow these 
     **Example Command**
     ```bash
     python3 src/main.py --data bank --depth 5 --gi
+    ```
+
     In this example, the command trains a decision tree on the bank dataset with a maximum depth of 5 using the Gini Index as the split criterion.
 
     **Parameters Description**
