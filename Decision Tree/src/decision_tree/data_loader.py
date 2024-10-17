@@ -2,6 +2,7 @@ import csv
 import numpy as np
 import argparse
 import os
+from .feature_def import get_feature_definitions
 
 # Function to load CSV data
 def load_data(file_path):
