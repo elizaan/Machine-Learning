@@ -39,7 +39,7 @@ class RandomForest:
             tree = _ID3_Random(S_idx, attributes, 1, self.max_depth, bootstrap_data, info_gain, Column, Numeric_Attributes, Feature, self.subset_size)
             self.trees.append(tree)
 
-    def random_predict(self, data, Column, Numeric_Attributes):
+    def bagged_predict(self, data, Column, Numeric_Attributes):
         """
         Predict the label for a given instance using the Random Forest model.
         Args:
