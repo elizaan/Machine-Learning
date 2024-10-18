@@ -20,7 +20,7 @@ from decision_tree.feature_def import get_feature_definitions
 from adaboost.adaboost import run_adaboost
 from bagging.bagging import run_bagged_trees
 from bagging.bias_variance import run_bias_variance
-from random.random_forest import run_random_forest
+from bagging.random_forest import run_random_forest
 
 def convert_labels_bagging(y):
     le = LabelEncoder()
@@ -55,10 +55,11 @@ def main():
     parser.add_argument('--bv', action='store_true', help="Run the bias-variance decomposition experiment")
     parser.add_argument('--n_estimators', type=int, default=500, help="Number of estimators/trees for AdaBoost/Bagging")
     parser.add_argument('--info_gain', type=str, default='entropy', help="Information gain criterion: 'entropy', 'gini_index', 'majority_error'")
+    parser.add_argument('--subset_size', type=int, choices=[2, 4, 6], default=2, help="Feature subset size for Random Forest")
     args = parser.parse_args()
 
     # Validate input arguments
-    if not args.adaboost and not args.bagging and not args.bv or not args.rf:
+    if not args.adaboost and not args.bagging and not args.bv and not args.rf:
         raise ValueError("You must specify at least one of the algorithms: --adaboost or --bagging or --bias-variance or --random-forest.")
 
     # Load data and get feature definitions
@@ -151,26 +152,26 @@ def main():
         print(f"Error: {bagged_tree_results['error']:.4f}")
 
     # Run Random Forest
-    if args.random_forest:
+    if args.rf:
         start_time = time.time()
         print("Running Random Forest...")
-        for subset_size in args.feature_subset_size:
-            print(f"\n--- Using Feature Subset Size: {subset_size} ---")
-            train_errors, test_errors = run_random_forest(
-                train_data, test_data, Feature, Column, Numeric_Attributes,
-                max_depth=args.depth, num_trees=args.n_estimators, info_gain=args.info_gain, subset_size=subset_size
-            )
+        print(f"\n--- Using Feature Subset Size: {args.subset_size} ---")
+        print(f"Number of Subsets: {args.subset_size}")
+        train_errors, test_errors = run_random_forest(
+            train_data, test_data, Feature, Column, Numeric_Attributes,
+            max_depth=args.depth, num_trees=args.n_estimators, info_gain=args.info_gain, subset_size=args.subset_size
+        )
 
-            # Plot the results
-            plt.figure(figsize=(12, 6))
-            plt.plot(range(1, args.n_estimators + 1), train_errors, label=f'Train Error (Subset Size={subset_size})')
-            plt.plot(range(1, args.n_estimators + 1), test_errors, label=f'Test Error (Subset Size={subset_size})')
-            plt.xlabel('Number of Trees')
-            plt.ylabel('Error Rate')
-            plt.title(f'Random Forest Error Rates (Subset Size={subset_size})')
-            plt.legend()
-            plt.savefig(f'./figures/Random_Forest_Error_Rates_{subset_size}.png')
-            plt.show()
+        # Plot the results
+        plt.figure(figsize=(12, 6))
+        plt.plot(range(1, args.n_estimators + 1), train_errors, label=f'Train Error (Subset Size={args.subset_size})')
+        plt.plot(range(1, args.n_estimators + 1), test_errors, label=f'Test Error (Subset Size={args.subset_size})')
+        plt.xlabel('Number of Trees')
+        plt.ylabel('Error Rate')
+        plt.title(f'Random Forest Error Rates (Subset Size={args.subset_size})')
+        plt.legend()
+        plt.savefig(f'./figures/Random_Forest_Error_Rates_{args.subset_size}.png')
+        plt.show()
 
         end_time = time.time()
         print(f"Total execution time: {end_time - start_time:.2f} seconds")
