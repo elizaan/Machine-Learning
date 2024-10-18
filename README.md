@@ -24,6 +24,30 @@ Machine-Learning/
 │
 └── Linear Regression/
 
+Machine-Learning/
+│
+├── Decision Tree/
+│   ├── data/
+│   │   ├── bank/
+│   │   └── car/
+│   └── src/
+│       ├── decision_tree/
+│       │   ├── __init__.py
+│       │   ├── data_loader.py
+│       │   ├── decision_tree.py
+│       │   ├── feature_def.py
+│       │   └── tree_utils.py
+│       └── main.py
+│
+└── Ensemble Learning/
+    └── src/
+        ├── adaboost/
+        │   ├── __init__.py
+        │   ├── adaboost.py
+        │   ├── decision_stump.py
+        │   └── utils.py
+        └── main.py
+
 - **Decision Tree**: Contains the implementation and relevant data for decision tree learning.
 - **Ensemble Learnin**g**: Reserved for future development of ensemble methods such as bagging, boosting, and random forests.
 - **Linear Regression**: Reserved for the implementation of linear regression models.
