@@ -73,6 +73,7 @@ def _ID3_Random(S_idx, listA, depth, max_depth, train_data, info_gain, Column, N
             subtree = {}
 
             # Randomly select a subset of features if specified
+
             if subset_size < len(A):
                 selected_features = random.sample(A, subset_size)
             else:
