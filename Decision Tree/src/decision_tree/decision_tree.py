@@ -1,12 +1,10 @@
 import numpy as np
 import copy
+import random
 import argparse
 from .data_loader import load_and_preprocess_data
 from .feature_def import get_feature_definitions
 from .tree_utils import check_same_label, find_most_common_label, data_separate, best_split
-
-
-
 
 # ID3 Algorithm Implementation
 def ID3(S_idx, listA, depth, max_depth, train_data, info_gain, Column, Numeric_Attributes, Feature):
@@ -45,6 +43,64 @@ def ID3(S_idx, listA, depth, max_depth, train_data, info_gain, Column, Numeric_A
             root[attr] = subtree
             return root
 
+def _ID3_Random(S_idx, listA, depth, max_depth, train_data, info_gain, Column, Numeric_Attributes, Feature, subset_size):
+    """
+    Modified ID3 Algorithm for Random Forest Learning with random feature selection.
+    Args:
+        S_idx (np.array): Indices of the samples.
+        listA (list): List of features to consider.
+        depth (int): Current depth of the tree.
+        max_depth (int): Maximum allowed depth.
+        train_data (np.array): Training data.
+        info_gain (str): Information gain criterion.
+        Column (list): List of column names.
+        Numeric_Attributes (list): List of numeric attributes.
+        Feature (dict): Feature definitions.
+        subset_size (int): Number of features to randomly select at each split.
+    """
+    S = copy.deepcopy(S_idx)
+    A = copy.deepcopy(listA)
+    if S.shape[0] == 0:
+        return -1
+    else:
+        first_label, same_label = check_same_label(S, train_data)
+        if same_label:
+            return first_label
+        elif not A or depth == max_depth:
+            return find_most_common_label(S, train_data)
+        else:
+            root = {}
+            subtree = {}
+
+            # Randomly select a subset of features if specified
+            if subset_size is not None and subset_size < len(A):
+                selected_features = random.sample(A, subset_size)
+            else:
+                selected_features = A
+
+            attr = best_split(S, selected_features, train_data, Column, Numeric_Attributes, Feature, info_gain)
+            V = data_separate(S, attr, train_data, Column, Numeric_Attributes, Feature)
+            A.remove(attr)
+
+            if attr in Numeric_Attributes:
+                # Handling Numeric Attributes
+                for i, v in enumerate(V):
+                    if v.shape[0] != 0:
+                        result = _ID3_Random(v, A, depth + 1, max_depth, train_data, info_gain, Column, Numeric_Attributes, Feature, subset_size)
+                        subtree[i] = result if result != -1 else find_most_common_label(S, train_data)
+                    else:
+                        subtree[i] = find_most_common_label(S, train_data)
+            else:
+                # Handling Categorical Attributes
+                for i, v in enumerate(V):
+                    if v.shape[0] != 0:
+                        result = _ID3_Random(v, A, depth + 1, max_depth, train_data, info_gain, Column, Numeric_Attributes, Feature, subset_size)
+                        subtree[Feature[attr][i]] = result if result != -1 else find_most_common_label(S, train_data)
+                    else:
+                        subtree[Feature[attr][i]] = find_most_common_label(S, train_data)
+            root[attr] = subtree
+            return root
+        
 # Predict Function
 def predict(data, Tree, Column, Numeric_Attributes):
     if isinstance(Tree, dict):
