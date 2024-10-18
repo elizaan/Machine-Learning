@@ -64,7 +64,7 @@ In Machine-Learning Folder (parent folder):
 
 - For Windows
    ```bash
-      python3 -m venv env
+      python -m venv env
       .\env\Scripts\activate
       pip install -r requirements.txt
     ```   
