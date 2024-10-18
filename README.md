@@ -12,25 +12,6 @@ Machine-Learning/
 │   │   ├── bank/
 │   │   └── car/
 │   └── src/
-|       ├──decision_tree
-|           ├── __init__.py
-│           ├── data_loader.py
-│           ├── decision_tree.py
-│           ├── feature_def.py
-│           └── tree_utils.py
-|       ├── main.py
-│
-├── Ensemble Learning/
-│
-└── Linear Regression/
-
-Machine-Learning/
-│
-├── Decision Tree/
-│   ├── data/
-│   │   ├── bank/
-│   │   └── car/
-│   └── src/
 │       ├── decision_tree/
 │       │   ├── __init__.py
 │       │   ├── data_loader.py
@@ -46,10 +27,15 @@ Machine-Learning/
         │   ├── adaboost.py
         │   ├── decision_stump.py
         │   └── utils.py
+        ├── bagging/
+        │   ├── __init__.py
+        │   ├── bagging.py
+        │   ├── bias_variance.py
+        │   └── random_forest.py
         └── main.py
 
 - **Decision Tree**: Contains the implementation and relevant data for decision tree learning.
-- **Ensemble Learnin**g**: Reserved for future development of ensemble methods such as bagging, boosting, and random forests.
+- **Ensemble Learnin**g**: Contains the implementation of adaboost, bagging and random forest.
 - **Linear Regression**: Reserved for the implementation of linear regression models.
 
 ## Installation
@@ -68,6 +54,10 @@ In Machine-Learning Folder (parent folder):
       .\env\Scripts\activate
       pip install -r requirements.txt
     ```   
+    sometimes windows do not permit to activate env, for that, open powershell as administration and do run the follwoing command
+    ```bash
+       Set-ExecutionPolicy RemoteSigned
+    ```
 
 
 ## Commands to run Decision Tree
@@ -101,6 +91,38 @@ To run the implementation of the Decision Tree learning algorithm, follow these 
     **Results:**
     Once the command runs, you will receive a tabular output displaying the error on the training and test sets.
 
+## Commands to run Ensemble Learnings
+
+To run the implementation of the Decision Tree learning algorithm, follow these steps:
+
+1. **Navigate to the Ensemble Learning Directory**:
+   navigate to the `src` folder to access the source code:
+
+   ```bash
+   cd Machine\ Learning/Ensemble\ Learning/
+
+2. **Run the Main File**: 
+   Use the main.py script to train and test models on the dataset of your choice. 
+
+   - Adaboost:
+   ```bash
+    python3 src/main.py --data bank --adaboost
+    ```
+   - Bagging:
+   ```bash
+   python3 src/main.py --data bank --bagging
+   ```
+   - Random Forest (x can be 2/4/6):
+   ```bash
+   python3 src/main.py --data bank --rf --subset_size x
+   ```
+   - Bias-Variance:
+   ```bash
+   python3 src/main.py --data bank --bv 
+   ```
+    
+   **Results:**
+   Once the command runs, you will receive a figure plotting error rates or printing information (bias-variance only).
 
 ## Contact ##
 For any questions or suggestions, feel free to contact:
