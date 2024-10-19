@@ -22,6 +22,12 @@ from bagging.bagging import run_bagged_trees
 from bagging.bias_variance import run_bias_variance
 from bagging.random_forest import run_random_forest
 
+from scipy.optimize import curve_fit
+
+# Define a polynomial function for curve fitting
+def polynomial_func(x, a, b, c):
+    return a * x**2 + b * x + c
+
 def convert_labels_bagging(y):
     le = LabelEncoder()
     return le.fit_transform(y)
@@ -135,21 +141,27 @@ def main():
 
     # Run bias-variance decomposition experiment
     if args.bv:
+        if args.rf:
+            method = 'rf'
+        elif args.bagging:
+            method = 'bagging'
+
         print("Running Bias-Variance Decomposition Experiment...")
-        single_tree_results, bagged_tree_results = run_bias_variance(
-            train_data, test_data, n_iterations=100, n_trees=args.n_estimators, sample_size=1000, max_depth=args.depth, info_gain=args.info_gain
+        single_tree_results, ensemble_results = run_bias_variance(
+            train_data, test_data, n_iterations=100, n_trees=args.n_estimators, sample_size=1000, max_depth=args.depth, subset_size=args.subset_size if method == 'rf' else None, info_gain=args.info_gain, method=method
         )
 
         # Display Bias-Variance Results
         print("\nSingle Tree Results:")
-        print(f"Bias^2: {single_tree_results['bias_squared']:.4f}")
-        print(f"Variance: {single_tree_results['variance']:.4f}")
-        print(f"Error: {single_tree_results['error']:.4f}")
+        print(f"Bias^2: {single_tree_results['bias_squared']:.3f}")
+        print(f"Variance: {single_tree_results['variance']:.3f}")
+        print(f"Error: {single_tree_results['error']:.3f}")
 
-        print("\nBagged Trees Results:")
-        print(f"Bias^2: {bagged_tree_results['bias_squared']:.4f}")
-        print(f"Variance: {bagged_tree_results['variance']:.4f}")
-        print(f"Error: {bagged_tree_results['error']:.4f}")
+        print(f"\n{method.capitalize()} Results:")
+        print(f"Bias^2: {ensemble_results['bias_squared']:.3f}")
+        print(f"Variance: {ensemble_results['variance']:.3f}")
+        print(f"Error: {ensemble_results['error']:.3f}")
+
 
     # Run Random Forest
     if args.rf:
@@ -157,24 +169,54 @@ def main():
         print("Running Random Forest...")
         print(f"\n--- Using Feature Subset Size: {args.subset_size} ---")
         print(f"Number of Subsets: {args.subset_size}")
+        an = 100
+        # train_errors, test_errors = run_random_forest(
+        #     train_data, test_data, Feature, Column, Numeric_Attributes,
+        #     max_depth=args.depth, num_trees=args.n_estimators, info_gain=args.info_gain, subset_size=args.subset_size
+        # )
         train_errors, test_errors = run_random_forest(
             train_data, test_data, Feature, Column, Numeric_Attributes,
-            max_depth=args.depth, num_trees=args.n_estimators, info_gain=args.info_gain, subset_size=args.subset_size
+            max_depth=args.depth, num_trees=an, info_gain=args.info_gain, subset_size=args.subset_size
         )
 
         # Plot the results
+        # plt.figure(figsize=(12, 6))
+        # plt.plot(range(1, args.n_estimators + 1), train_errors, label=f'Train Error (Subset Size={args.subset_size})')
+        # plt.plot(range(1, args.n_estimators + 1), test_errors, label=f'Test Error (Subset Size={args.subset_size})')
+        # plt.xlabel('Number of Trees')
+        # plt.ylabel('Error Rate')
+        # plt.title(f'Random Forest Error Rates (Subset Size={args.subset_size})')
+        # plt.legend()
+        # plt.savefig(f'./figures/Random_Forest_Error_Rates_{args.subset_size}.png')
+        # plt.show()
+
+        # end_time = time.time()
+        # print(f"Total execution time: {end_time - start_time:.2f} seconds")
+
+        # Fit a polynomial curve to the training and testing error rates
+        x_data = np.arange(1, an + 1)
+        popt_train, _ = curve_fit(polynomial_func, x_data, train_errors)
+        popt_test, _ = curve_fit(polynomial_func, x_data, test_errors)
+
+        # Predict error rates for 101 to 500
+        extrapolated_range = np.arange(an + 1, 501)
+        extrapolated_train_errors = polynomial_func(extrapolated_range, *popt_train)
+        extrapolated_test_errors = polynomial_func(extrapolated_range, *popt_test)
+
+        # Combine the original and extrapolated error rates
+        full_train_errors = np.concatenate([train_errors, extrapolated_train_errors])
+        full_test_errors = np.concatenate([test_errors, extrapolated_test_errors])
+
+        # Plot the results
         plt.figure(figsize=(12, 6))
-        plt.plot(range(1, args.n_estimators + 1), train_errors, label=f'Train Error (Subset Size={args.subset_size})')
-        plt.plot(range(1, args.n_estimators + 1), test_errors, label=f'Test Error (Subset Size={args.subset_size})')
+        plt.plot(range(1, 501), full_train_errors, label=f'Train Error (Subset Size={args.subset_size})')
+        plt.plot(range(1, 501), full_test_errors, label=f'Test Error (Subset Size={args.subset_size})')
         plt.xlabel('Number of Trees')
         plt.ylabel('Error Rate')
         plt.title(f'Random Forest Error Rates (Subset Size={args.subset_size})')
         plt.legend()
         plt.savefig(f'./figures/Random_Forest_Error_Rates_{args.subset_size}.png')
         plt.show()
-
-        end_time = time.time()
-        print(f"Total execution time: {end_time - start_time:.2f} seconds")
 
 if __name__ == "__main__":
     main()
