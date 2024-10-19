@@ -24,9 +24,6 @@ from bagging.random_forest import run_random_forest
 
 from scipy.optimize import curve_fit
 
-# Define a polynomial function for curve fitting
-# def polynomial_func(x, a, b, c, d):
-#     return a * x**3 + b * x**2 + c * x + d
 def exp_decay_func(x, a, b, c):
     return a * np.exp(-b * x) + c
 
@@ -172,57 +169,57 @@ def main():
         print(f"\n--- Using Feature Subset Size: {args.subset_size} ---")
         print(f"Number of Subsets: {args.subset_size}")
         
-        # train_errors, test_errors = run_random_forest(
-        #     train_data, test_data, Feature, Column, Numeric_Attributes,
-        #     max_depth=args.depth, num_trees=args.n_estimators, info_gain=args.info_gain, subset_size=args.subset_size
-        # )
-
-        # Plot the results
-        # plt.figure(figsize=(12, 6))
-        # plt.plot(range(1, args.n_estimators + 1), train_errors, label=f'Train Error (Subset Size={args.subset_size})')
-        # plt.plot(range(1, args.n_estimators + 1), test_errors, label=f'Test Error (Subset Size={args.subset_size})')
-        # plt.xlabel('Number of Trees')
-        # plt.ylabel('Error Rate')
-        # plt.title(f'Random Forest Error Rates (Subset Size={args.subset_size})')
-        # plt.legend()
-        # plt.savefig(f'./figures/Random_Forest_Error_Rates_{args.subset_size}.png')
-        # plt.show()
-
-        # end_time = time.time()
-        # print(f"Total execution time: {end_time - start_time:.2f} seconds")
-
-        # Fit a polynomial curve to the training and testing error rates
-        # Run for 100 estimators
-        actual_n_estimators = 100
         train_errors, test_errors = run_random_forest(
             train_data, test_data, Feature, Column, Numeric_Attributes,
-            max_depth=args.depth, num_trees=actual_n_estimators, info_gain=args.info_gain, subset_size=args.subset_size
+            max_depth=args.depth, num_trees=args.n_estimators, info_gain=args.info_gain, subset_size=args.subset_size
         )
-
-        # Fit an exponential decay curve to the training and testing error rates
-        x_data = np.arange(1, actual_n_estimators + 1)
-        popt_train, _ = curve_fit(exp_decay_func, x_data, train_errors, maxfev=10000)
-        popt_test, _ = curve_fit(exp_decay_func, x_data, test_errors, maxfev=10000)
-
-        # Predict error rates for 101 to 500
-        extrapolated_range = np.arange(actual_n_estimators + 1, 501)
-        extrapolated_train_errors = exp_decay_func(extrapolated_range, *popt_train)
-        extrapolated_test_errors = exp_decay_func(extrapolated_range, *popt_test)
-
-        # Combine the original and extrapolated error rates
-        full_train_errors = np.concatenate([train_errors, extrapolated_train_errors])
-        full_test_errors = np.concatenate([test_errors, extrapolated_test_errors])
 
         # Plot the results
         plt.figure(figsize=(12, 6))
-        plt.plot(range(1, 501), full_train_errors, label=f'Train Error (Subset Size={args.subset_size})')
-        plt.plot(range(1, 501), full_test_errors, label=f'Test Error (Subset Size={args.subset_size})')
+        plt.plot(range(1, args.n_estimators + 1), train_errors, label=f'Train Error (Subset Size={args.subset_size})')
+        plt.plot(range(1, args.n_estimators + 1), test_errors, label=f'Test Error (Subset Size={args.subset_size})')
         plt.xlabel('Number of Trees')
         plt.ylabel('Error Rate')
         plt.title(f'Random Forest Error Rates (Subset Size={args.subset_size})')
         plt.legend()
         plt.savefig(f'./figures/Random_Forest_Error_Rates_{args.subset_size}.png')
         plt.show()
+
+        end_time = time.time()
+        print(f"Total execution time: {end_time - start_time:.2f} seconds")
+
+
+        # Run for 100 estimators
+        # actual_n_estimators = 100
+        # train_errors, test_errors = run_random_forest(
+        #     train_data, test_data, Feature, Column, Numeric_Attributes,
+        #     max_depth=args.depth, num_trees=actual_n_estimators, info_gain=args.info_gain, subset_size=args.subset_size
+        # )
+
+        # # Fit an exponential decay curve to the training and testing error rates
+        # x_data = np.arange(1, actual_n_estimators + 1)
+        # popt_train, _ = curve_fit(exp_decay_func, x_data, train_errors, maxfev=10000)
+        # popt_test, _ = curve_fit(exp_decay_func, x_data, test_errors, maxfev=10000)
+
+        # # Predict error rates for 101 to 500
+        # extrapolated_range = np.arange(actual_n_estimators + 1, 501)
+        # extrapolated_train_errors = exp_decay_func(extrapolated_range, *popt_train)
+        # extrapolated_test_errors = exp_decay_func(extrapolated_range, *popt_test)
+
+        # # Combine the original and extrapolated error rates
+        # full_train_errors = np.concatenate([train_errors, extrapolated_train_errors])
+        # full_test_errors = np.concatenate([test_errors, extrapolated_test_errors])
+
+        # # Plot the results
+        # plt.figure(figsize=(12, 6))
+        # plt.plot(range(1, 501), full_train_errors, label=f'Train Error (Subset Size={args.subset_size})')
+        # plt.plot(range(1, 501), full_test_errors, label=f'Test Error (Subset Size={args.subset_size})')
+        # plt.xlabel('Number of Trees')
+        # plt.ylabel('Error Rate')
+        # plt.title(f'Random Forest Error Rates (Subset Size={args.subset_size})')
+        # plt.legend()
+        # plt.savefig(f'./figures/Random_Forest_Error_Rates_{args.subset_size}.png')
+        # plt.show()
 
 if __name__ == "__main__":
     main()

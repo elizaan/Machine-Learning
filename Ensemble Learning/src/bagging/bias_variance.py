@@ -5,17 +5,14 @@ from decision_tree.decision_tree import predict
 from decision_tree.feature_def import get_feature_definitions
 
 def compute_bias_variance(predictions, true_label):
-    """
-    Compute the bias squared and variance for a set of predictions.
+    # Manually map 'yes' to 1 and 'no' to 0
+    mapping = {'yes': 1, 'no': 0}
+    if isinstance(predictions[0], str):
+        predictions = np.array([mapping[p] for p in predictions])
+        true_label = mapping[true_label]
     
-    Args:
-        predictions (np.array): Array of predictions.
-        true_label (float): The ground-truth label.
+    predictions = np.array(predictions, dtype=float)
     
-    Returns:
-        bias_squared (float): The squared bias term.
-        variance (float): The variance term.
-    """
     mean_prediction = np.mean(predictions)
     bias_squared = (mean_prediction - true_label) ** 2
     variance = np.var(predictions)
