@@ -54,7 +54,7 @@ In Machine-Learning Folder (parent folder):
       .\env\Scripts\activate
       pip install -r requirements.txt
     ```   
-    sometimes windows do not permit to activate env, for that, open powershell as administration and do run the follwoing command
+    Sometimes windows do not permit to activate env, for that, open powershell as administration and do run the follwoing command
     ```bash
        Set-ExecutionPolicy RemoteSigned
     ```
@@ -75,17 +75,21 @@ To run the implementation of the Decision Tree learning algorithm, follow these 
 
     **Example Command**
     ```bash
-    python3 src/main.py --data bank --depth 5 --gi
+    python src/main.py --data bank --depth 5 --gi
     ```
 
     In this example, the command trains a decision tree on the bank dataset with a maximum depth of 5 using the Gini Index as the split criterion.
 
     **Parameters Description**:
     Dataset (--data): Choose between bank and car datasets. bank for bank and car for car dataset
+
     Maximum Depth (--depth): Define the maximum depth for the tree. Takes numeroical value.
+
     Splitting Criteria:
     Gini Index (--gi): Measures the impurity of a node.
+
     Entropy (--et): Measures the information gain.
+
     Majority Error (--me): Measures the fraction of misclassified instances.
     
     **Results:**
@@ -93,7 +97,7 @@ To run the implementation of the Decision Tree learning algorithm, follow these 
 
 ## Commands to run Ensemble Learnings
 
-To run the implementation of the Decision Tree learning algorithm, follow these steps:
+To run the implementation of the Ensemble learning algorithms, follow these steps:
 
 1. **Navigate to the Ensemble Learning Directory**:
    navigate to the `src` folder to access the source code:
@@ -106,23 +110,42 @@ To run the implementation of the Decision Tree learning algorithm, follow these 
 
    - Adaboost:
    ```bash
-    python3 src/main.py --data bank --adaboost
+    python src/main.py --data bank --adaboost
     ```
    - Bagging:
    ```bash
-   python3 src/main.py --data bank --bagging
+   python src/main.py --data bank --bagging
    ```
    - Random Forest (x can be 2/4/6):
    ```bash
-   python3 src/main.py --data bank --rf --subset_size x
+   python src/main.py --data bank --rf --subset_size x
    ```
    - Bias-Variance:
+   For Bagging:
    ```bash
-   python3 src/main.py --data bank --bv 
+   python src/main.py --data bank --bv --bagging
    ```
-    
+   For Random Forest (x = 2/4/6):
+   ```bash
+   python src/main.py --data bank --bv --rf --subset_size x
+   ```
    **Results:**
    Once the command runs, you will receive a figure plotting error rates or printing information (bias-variance only).
+
+## Commands to run Linear Regressions
+
+1. **Navigate to the Ensemble Learning Directory**:
+   navigate to the `src` folder to access the source code:
+
+   ```bash
+   cd Machine\ Learning/Linear\ Regression/
+
+2. **Run the Main File**: 
+   Use the main.py script to plot the cost functions for BGD, SGD all at once. 
+
+   ```bash
+    python3 src/main.py
+    ```
 
 ## Contact ##
 For any questions or suggestions, feel free to contact:
