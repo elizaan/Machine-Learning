@@ -25,8 +25,10 @@ from bagging.random_forest import run_random_forest
 from scipy.optimize import curve_fit
 
 # Define a polynomial function for curve fitting
-def polynomial_func(x, a, b, c):
-    return a * x**2 + b * x + c
+# def polynomial_func(x, a, b, c, d):
+#     return a * x**3 + b * x**2 + c * x + d
+def exp_decay_func(x, a, b, c):
+    return a * np.exp(-b * x) + c
 
 def convert_labels_bagging(y):
     le = LabelEncoder()
@@ -169,15 +171,11 @@ def main():
         print("Running Random Forest...")
         print(f"\n--- Using Feature Subset Size: {args.subset_size} ---")
         print(f"Number of Subsets: {args.subset_size}")
-        an = 100
+        
         # train_errors, test_errors = run_random_forest(
         #     train_data, test_data, Feature, Column, Numeric_Attributes,
         #     max_depth=args.depth, num_trees=args.n_estimators, info_gain=args.info_gain, subset_size=args.subset_size
         # )
-        train_errors, test_errors = run_random_forest(
-            train_data, test_data, Feature, Column, Numeric_Attributes,
-            max_depth=args.depth, num_trees=an, info_gain=args.info_gain, subset_size=args.subset_size
-        )
 
         # Plot the results
         # plt.figure(figsize=(12, 6))
@@ -194,14 +192,22 @@ def main():
         # print(f"Total execution time: {end_time - start_time:.2f} seconds")
 
         # Fit a polynomial curve to the training and testing error rates
-        x_data = np.arange(1, an + 1)
-        popt_train, _ = curve_fit(polynomial_func, x_data, train_errors)
-        popt_test, _ = curve_fit(polynomial_func, x_data, test_errors)
+        # Run for 100 estimators
+        actual_n_estimators = 100
+        train_errors, test_errors = run_random_forest(
+            train_data, test_data, Feature, Column, Numeric_Attributes,
+            max_depth=args.depth, num_trees=actual_n_estimators, info_gain=args.info_gain, subset_size=args.subset_size
+        )
+
+        # Fit an exponential decay curve to the training and testing error rates
+        x_data = np.arange(1, actual_n_estimators + 1)
+        popt_train, _ = curve_fit(exp_decay_func, x_data, train_errors, maxfev=10000)
+        popt_test, _ = curve_fit(exp_decay_func, x_data, test_errors, maxfev=10000)
 
         # Predict error rates for 101 to 500
-        extrapolated_range = np.arange(an + 1, 501)
-        extrapolated_train_errors = polynomial_func(extrapolated_range, *popt_train)
-        extrapolated_test_errors = polynomial_func(extrapolated_range, *popt_test)
+        extrapolated_range = np.arange(actual_n_estimators + 1, 501)
+        extrapolated_train_errors = exp_decay_func(extrapolated_range, *popt_train)
+        extrapolated_test_errors = exp_decay_func(extrapolated_range, *popt_test)
 
         # Combine the original and extrapolated error rates
         full_train_errors = np.concatenate([train_errors, extrapolated_train_errors])
