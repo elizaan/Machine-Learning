@@ -5,6 +5,7 @@ This is a machine learning library developed by Ishrat Jahan Eliza for CS5350/63
 
 The repository is organized as follows:
 
+```bash
 Machine-Learning/
 │
 ├── Decision Tree/
@@ -33,6 +34,7 @@ Machine-Learning/
         │   ├── bias_variance.py
         │   └── random_forest.py
         └── main.py
+```
 
 - **Decision Tree**: Contains the implementation and relevant data for decision tree learning.
 - **Ensemble Learnin**g**: Contains the implementation of adaboost, bagging and random forest.
