@@ -1,0 +1,1824 @@
+Voted Perceptron Results
+==================================================
+
+Total number of distinct weight vectors: 259
+
+Total correct predictions across all vectors: 8720
+
+Weight Vectors and their Counts:
+--------------------------------------------------
+
+Weight Vector 1:
+Weights: [-0.38481 -1.01539  0.38561  0.42228]
+Bias: -0.10
+Count (correct predictions): 2
+Percentage of total predictions: 0.02%
+------------------------------
+
+Weight Vector 2:
+Weights: [-0.3800092 -0.85502   -0.46195    0.346722 ]
+Bias: -0.20
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 3:
+Weights: [-0.5066792 -0.57319   -0.70455    0.158102 ]
+Bias: -0.10
+Count (correct predictions): 8
+Percentage of total predictions: 0.09%
+------------------------------
+
+Weight Vector 4:
+Weights: [-0.7119692 -0.18934   -0.784094   0.036722 ]
+Bias: 0.00
+Count (correct predictions): 3
+Percentage of total predictions: 0.03%
+------------------------------
+
+Weight Vector 5:
+Weights: [-1.0388892 -1.4634     0.771636   0.02254  ]
+Bias: 0.10
+Count (correct predictions): 7
+Percentage of total predictions: 0.08%
+------------------------------
+
+Weight Vector 6:
+Weights: [-1.4309292 -1.05617    0.747958  -0.18897  ]
+Bias: 0.20
+Count (correct predictions): 5
+Percentage of total predictions: 0.06%
+------------------------------
+
+Weight Vector 7:
+Weights: [-1.7775992 -0.64893    0.319138  -0.34315  ]
+Bias: 0.10
+Count (correct predictions): 9
+Percentage of total predictions: 0.10%
+------------------------------
+
+Weight Vector 8:
+Weights: [-1.7658162 -0.49104   -0.483862  -0.3403469]
+Bias: 0.00
+Count (correct predictions): 10
+Percentage of total predictions: 0.11%
+------------------------------
+
+Weight Vector 9:
+Weights: [-1.6208062 -0.13037   -0.889432  -0.5000069]
+Bias: 0.10
+Count (correct predictions): 2
+Percentage of total predictions: 0.02%
+------------------------------
+
+Weight Vector 10:
+Weights: [-2.0884562 -0.69673    0.207468  -0.5334559]
+Bias: 0.20
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 11:
+Weights: [-1.8236662 -1.71047    0.340568   0.0136141]
+Bias: 0.10
+Count (correct predictions): 3
+Percentage of total predictions: 0.03%
+------------------------------
+
+Weight Vector 12:
+Weights: [-1.8120742 -1.38828   -0.002452  -0.2709559]
+Bias: 0.20
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 13:
+Weights: [-2.0708742 -1.00174   -0.035812  -0.3989259]
+Bias: 0.30
+Count (correct predictions): 8
+Percentage of total predictions: 0.09%
+------------------------------
+
+Weight Vector 14:
+Weights: [-2.0587482 -0.979393  -0.083139  -0.3019019]
+Bias: 0.40
+Count (correct predictions): 2
+Percentage of total predictions: 0.02%
+------------------------------
+
+Weight Vector 15:
+Weights: [-2.1078292 -0.694873  -0.447499  -0.6119419]
+Bias: 0.50
+Count (correct predictions): 10
+Percentage of total predictions: 0.11%
+------------------------------
+
+Weight Vector 16:
+Weights: [-1.8883992 -0.239843  -0.945099  -0.8844819]
+Bias: 0.60
+Count (correct predictions): 2
+Percentage of total predictions: 0.02%
+------------------------------
+
+Weight Vector 17:
+Weights: [-2.2905792 -1.070243   0.310401  -1.0354719]
+Bias: 0.70
+Count (correct predictions): 3
+Percentage of total predictions: 0.03%
+------------------------------
+
+Weight Vector 18:
+Weights: [-2.2795472 -0.872833  -0.026279  -1.1007309]
+Bias: 0.80
+Count (correct predictions): 14
+Percentage of total predictions: 0.16%
+------------------------------
+
+Weight Vector 19:
+Weights: [-2.2494662 -0.855452  -0.201699  -1.0518099]
+Bias: 0.90
+Count (correct predictions): 6
+Percentage of total predictions: 0.07%
+------------------------------
+
+Weight Vector 20:
+Weights: [-2.1894162 -0.662182  -0.530579  -1.0842249]
+Bias: 1.00
+Count (correct predictions): 11
+Percentage of total predictions: 0.13%
+------------------------------
+
+Weight Vector 21:
+Weights: [-2.0838962 -0.543612  -0.794689  -1.0731919]
+Bias: 1.10
+Count (correct predictions): 17
+Percentage of total predictions: 0.19%
+------------------------------
+
+Weight Vector 22:
+Weights: [-2.0890941 -1.248822  -0.589279  -0.7581119]
+Bias: 1.00
+Count (correct predictions): 27
+Percentage of total predictions: 0.31%
+------------------------------
+
+Weight Vector 23:
+Weights: [-2.2034141 -0.874692  -1.147049  -0.6945339]
+Bias: 0.90
+Count (correct predictions): 30
+Percentage of total predictions: 0.34%
+------------------------------
+
+Weight Vector 24:
+Weights: [-1.9386241 -1.888432  -1.013949  -0.1474639]
+Bias: 0.80
+Count (correct predictions): 3
+Percentage of total predictions: 0.03%
+------------------------------
+
+Weight Vector 25:
+Weights: [-1.8419161 -1.504172  -1.507089  -0.5606939]
+Bias: 0.90
+Count (correct predictions): 12
+Percentage of total predictions: 0.14%
+------------------------------
+
+Weight Vector 26:
+Weights: [-1.8748401 -1.058652  -1.964269  -0.4618139]
+Bias: 0.80
+Count (correct predictions): 6
+Percentage of total predictions: 0.07%
+------------------------------
+
+Weight Vector 27:
+Weights: [-2.0458801 -1.536452  -1.343179  -0.4220739]
+Bias: 0.90
+Count (correct predictions): 7
+Percentage of total predictions: 0.08%
+------------------------------
+
+Weight Vector 28:
+Weights: [-1.9899411 -1.567492  -1.324872  -0.3774209]
+Bias: 1.00
+Count (correct predictions): 31
+Percentage of total predictions: 0.36%
+------------------------------
+
+Weight Vector 29:
+Weights: [-2.0418911 -1.241162  -1.633822  -0.2789309]
+Bias: 0.90
+Count (correct predictions): 13
+Percentage of total predictions: 0.15%
+------------------------------
+
+Weight Vector 30:
+Weights: [-2.3561211 -2.544812  -0.066092  -0.3450959]
+Bias: 1.00
+Count (correct predictions): 2
+Percentage of total predictions: 0.02%
+------------------------------
+
+Weight Vector 31:
+Weights: [-2.5286911 -2.097842  -0.888282  -0.1643659]
+Bias: 0.90
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 32:
+Weights: [-3.2329011 -1.177842  -0.862349  -0.6326859]
+Bias: 1.00
+Count (correct predictions): 30
+Percentage of total predictions: 0.34%
+------------------------------
+
+Weight Vector 33:
+Weights: [-3.0649111 -0.757162  -1.316329  -0.8719959]
+Bias: 1.10
+Count (correct predictions): 53
+Percentage of total predictions: 0.61%
+------------------------------
+
+Weight Vector 34:
+Weights: [-2.9297311 -0.651212  -1.550699  -0.8319979]
+Bias: 1.20
+Count (correct predictions): 15
+Percentage of total predictions: 0.17%
+------------------------------
+
+Weight Vector 35:
+Weights: [-3.2803311 -1.907882  -0.034639  -0.9072139]
+Bias: 1.30
+Count (correct predictions): 24
+Percentage of total predictions: 0.28%
+------------------------------
+
+Weight Vector 36:
+Weights: [-3.1070211 -1.512442  -0.508759  -1.1573839]
+Bias: 1.40
+Count (correct predictions): 18
+Percentage of total predictions: 0.21%
+------------------------------
+
+Weight Vector 37:
+Weights: [-3.2891811 -0.864962  -1.313899  -1.1155289]
+Bias: 1.30
+Count (correct predictions): 17
+Percentage of total predictions: 0.19%
+------------------------------
+
+Weight Vector 38:
+Weights: [-3.2104911 -1.821592  -0.935229  -0.3651889]
+Bias: 1.20
+Count (correct predictions): 5
+Percentage of total predictions: 0.06%
+------------------------------
+
+Weight Vector 39:
+Weights: [-3.0597211 -1.625632  -1.241069  -0.3774319]
+Bias: 1.30
+Count (correct predictions): 18
+Percentage of total predictions: 0.21%
+------------------------------
+
+Weight Vector 40:
+Weights: [-2.9585511 -1.535412  -1.476129  -0.3347179]
+Bias: 1.40
+Count (correct predictions): 104
+Percentage of total predictions: 1.19%
+------------------------------
+
+Weight Vector 41:
+Weights: [-2.7193811 -1.079762  -1.975009  -0.6245879]
+Bias: 1.50
+Count (correct predictions): 21
+Percentage of total predictions: 0.24%
+------------------------------
+
+Weight Vector 42:
+Weights: [-3.0799111 -1.677162  -0.965849  -0.7074339]
+Bias: 1.60
+Count (correct predictions): 27
+Percentage of total predictions: 0.31%
+------------------------------
+
+Weight Vector 43:
+Weights: [-3.0638031 -1.030922  -1.801579  -0.5552739]
+Bias: 1.50
+Count (correct predictions): 27
+Percentage of total predictions: 0.31%
+------------------------------
+
+Weight Vector 44:
+Weights: [-3.4334131 -2.398712  -0.043629  -0.8170839]
+Bias: 1.60
+Count (correct predictions): 12
+Percentage of total predictions: 0.14%
+------------------------------
+
+Weight Vector 45:
+Weights: [-3.3439011 -1.921332  -0.527939  -1.3761739]
+Bias: 1.70
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 46:
+Weights: [-3.3958481 -1.595002  -0.836889  -1.2776819]
+Bias: 1.60
+Count (correct predictions): 113
+Percentage of total predictions: 1.30%
+------------------------------
+
+Weight Vector 47:
+Weights: [-3.4287681 -1.149482  -1.294069  -1.1788019]
+Bias: 1.50
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 48:
+Weights: [-3.2256681 -0.964282  -1.595279  -1.1785016]
+Bias: 1.60
+Count (correct predictions): 10
+Percentage of total predictions: 0.11%
+------------------------------
+
+Weight Vector 49:
+Weights: [-3.1893891 -1.793232  -1.403149  -0.8451816]
+Bias: 1.50
+Count (correct predictions): 28
+Percentage of total predictions: 0.32%
+------------------------------
+
+Weight Vector 50:
+Weights: [-2.9876191 -1.613412  -1.698959  -0.8241916]
+Bias: 1.60
+Count (correct predictions): 48
+Percentage of total predictions: 0.55%
+------------------------------
+
+Weight Vector 51:
+Weights: [-2.8656391 -1.403592  -2.018499  -0.8113486]
+Bias: 1.70
+Count (correct predictions): 7
+Percentage of total predictions: 0.08%
+------------------------------
+
+Weight Vector 52:
+Weights: [-2.7869491 -2.360222  -1.639829  -0.0610086]
+Bias: 1.60
+Count (correct predictions): 29
+Percentage of total predictions: 0.33%
+------------------------------
+
+Weight Vector 53:
+Weights: [-3.4205891 -1.431742  -1.6384015 -0.7394486]
+Bias: 1.70
+Count (correct predictions): 24
+Percentage of total predictions: 0.28%
+------------------------------
+
+Weight Vector 54:
+Weights: [-3.1557991 -2.445482  -1.5053015 -0.1923786]
+Bias: 1.60
+Count (correct predictions): 28
+Percentage of total predictions: 0.32%
+------------------------------
+
+Weight Vector 55:
+Weights: [-3.0107891 -2.084812  -1.9108715 -0.3520386]
+Bias: 1.70
+Count (correct predictions): 27
+Percentage of total predictions: 0.31%
+------------------------------
+
+Weight Vector 56:
+Weights: [-2.7913591 -1.629782  -2.4084715 -0.6245786]
+Bias: 1.80
+Count (correct predictions): 2
+Percentage of total predictions: 0.02%
+------------------------------
+
+Weight Vector 57:
+Weights: [-3.1935391 -2.460182  -1.1529715 -0.7755686]
+Bias: 1.90
+Count (correct predictions): 23
+Percentage of total predictions: 0.26%
+------------------------------
+
+Weight Vector 58:
+Weights: [-3.1334891 -2.266912  -1.4818515 -0.8079836]
+Bias: 2.00
+Count (correct predictions): 11
+Percentage of total predictions: 0.13%
+------------------------------
+
+Weight Vector 59:
+Weights: [-3.0279691 -2.148342  -1.7459615 -0.7969506]
+Bias: 2.10
+Count (correct predictions): 11
+Percentage of total predictions: 0.13%
+------------------------------
+
+Weight Vector 60:
+Weights: [-2.8790091 -1.805462  -2.1490515 -0.9395406]
+Bias: 2.20
+Count (correct predictions): 78
+Percentage of total predictions: 0.89%
+------------------------------
+
+Weight Vector 61:
+Weights: [-2.9119331 -1.359942  -2.6062315 -0.8406606]
+Bias: 2.10
+Count (correct predictions): 6
+Percentage of total predictions: 0.07%
+------------------------------
+
+Weight Vector 62:
+Weights: [-3.0829731 -1.837742  -1.9851415 -0.8009206]
+Bias: 2.20
+Count (correct predictions): 38
+Percentage of total predictions: 0.44%
+------------------------------
+
+Weight Vector 63:
+Weights: [-3.1349231 -1.511412  -2.2940915 -0.7024306]
+Bias: 2.10
+Count (correct predictions): 13
+Percentage of total predictions: 0.15%
+------------------------------
+
+Weight Vector 64:
+Weights: [-3.4491531 -2.815062  -0.7263615 -0.7685956]
+Bias: 2.20
+Count (correct predictions): 2
+Percentage of total predictions: 0.02%
+------------------------------
+
+Weight Vector 65:
+Weights: [-3.6217231 -2.368092  -1.5485515 -0.5878656]
+Bias: 2.10
+Count (correct predictions): 6
+Percentage of total predictions: 0.07%
+------------------------------
+
+Weight Vector 66:
+Weights: [-3.7146931 -1.988382  -2.0128415 -0.5582956]
+Bias: 2.00
+Count (correct predictions): 25
+Percentage of total predictions: 0.29%
+------------------------------
+
+Weight Vector 67:
+Weights: [-3.5467031 -1.567702  -2.4668215 -0.7976056]
+Bias: 2.10
+Count (correct predictions): 20
+Percentage of total predictions: 0.23%
+------------------------------
+
+Weight Vector 68:
+Weights: [-3.8697531 -2.289052  -1.3024915 -0.8922186]
+Bias: 2.20
+Count (correct predictions): 23
+Percentage of total predictions: 0.26%
+------------------------------
+
+Weight Vector 69:
+Weights: [-3.8052811 -1.828432  -2.1371915 -0.6212286]
+Bias: 2.10
+Count (correct predictions): 10
+Percentage of total predictions: 0.11%
+------------------------------
+
+Weight Vector 70:
+Weights: [-3.6701011 -1.722482  -2.3715615 -0.5812306]
+Bias: 2.20
+Count (correct predictions): 74
+Percentage of total predictions: 0.85%
+------------------------------
+
+Weight Vector 71:
+Weights: [-3.5914111 -2.679112  -1.9928915  0.1691094]
+Bias: 2.10
+Count (correct predictions): 5
+Percentage of total predictions: 0.06%
+------------------------------
+
+Weight Vector 72:
+Weights: [-3.4406411 -2.483152  -2.2987315  0.1568664]
+Bias: 2.20
+Count (correct predictions): 58
+Percentage of total predictions: 0.67%
+------------------------------
+
+Weight Vector 73:
+Weights: [-3.3724611 -1.998112  -2.8200615 -0.4535636]
+Bias: 2.30
+Count (correct predictions): 26
+Percentage of total predictions: 0.30%
+------------------------------
+
+Weight Vector 74:
+Weights: [-3.6261911 -2.694012  -1.9395215 -0.3006736]
+Bias: 2.40
+Count (correct predictions): 38
+Percentage of total predictions: 0.44%
+------------------------------
+
+Weight Vector 75:
+Weights: [-3.3870211 -2.238362  -2.4384015 -0.5905436]
+Bias: 2.50
+Count (correct predictions): 53
+Percentage of total predictions: 0.61%
+------------------------------
+
+Weight Vector 76:
+Weights: [-3.4389711 -1.912032  -2.7473515 -0.4920536]
+Bias: 2.40
+Count (correct predictions): 22
+Percentage of total predictions: 0.25%
+------------------------------
+
+Weight Vector 77:
+Weights: [-3.8085811 -3.279822  -0.9894015 -0.7538636]
+Bias: 2.50
+Count (correct predictions): 12
+Percentage of total predictions: 0.14%
+------------------------------
+
+Weight Vector 78:
+Weights: [-3.7190691 -2.802442  -1.4737115 -1.3129536]
+Bias: 2.60
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 79:
+Weights: [-3.7710161 -2.476112  -1.7826615 -1.2144616]
+Bias: 2.50
+Count (correct predictions): 113
+Percentage of total predictions: 1.30%
+------------------------------
+
+Weight Vector 80:
+Weights: [-3.8039361 -2.030592  -2.2398415 -1.1155816]
+Bias: 2.40
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 81:
+Weights: [-3.6008361 -1.845392  -2.5410515 -1.1152813]
+Bias: 2.50
+Count (correct predictions): 38
+Percentage of total predictions: 0.44%
+------------------------------
+
+Weight Vector 82:
+Weights: [-3.3990661 -1.665572  -2.8368615 -1.0942913]
+Bias: 2.60
+Count (correct predictions): 49
+Percentage of total predictions: 0.56%
+------------------------------
+
+Weight Vector 83:
+Weights: [-3.4711341 -2.341402  -2.2527815 -1.0319223]
+Bias: 2.70
+Count (correct predictions): 114
+Percentage of total predictions: 1.31%
+------------------------------
+
+Weight Vector 84:
+Weights: [-3.2517041 -1.886372  -2.7503815 -1.3044623]
+Bias: 2.80
+Count (correct predictions): 2
+Percentage of total predictions: 0.02%
+------------------------------
+
+Weight Vector 85:
+Weights: [-3.6538841 -2.716772  -1.4948815 -1.4554523]
+Bias: 2.90
+Count (correct predictions): 34
+Percentage of total predictions: 0.39%
+------------------------------
+
+Weight Vector 86:
+Weights: [-3.5483641 -2.598202  -1.7589915 -1.4444193]
+Bias: 3.00
+Count (correct predictions): 11
+Percentage of total predictions: 0.13%
+------------------------------
+
+Weight Vector 87:
+Weights: [-3.3994041 -2.255322  -2.1620815 -1.5870093]
+Bias: 3.10
+Count (correct predictions): 63
+Percentage of total predictions: 0.72%
+------------------------------
+
+Weight Vector 88:
+Weights: [-3.1346141 -3.269062  -2.0289815 -1.0399393]
+Bias: 3.00
+Count (correct predictions): 15
+Percentage of total predictions: 0.17%
+------------------------------
+
+Weight Vector 89:
+Weights: [-3.1675381 -2.823542  -2.4861615 -0.9410593]
+Bias: 2.90
+Count (correct predictions): 44
+Percentage of total predictions: 0.50%
+------------------------------
+
+Weight Vector 90:
+Weights: [-3.2194881 -2.497212  -2.7951115 -0.8425693]
+Bias: 2.80
+Count (correct predictions): 49
+Percentage of total predictions: 0.56%
+------------------------------
+
+Weight Vector 91:
+Weights: [-3.2714381 -2.170882  -3.1040615 -0.7440793]
+Bias: 2.70
+Count (correct predictions): 17
+Percentage of total predictions: 0.19%
+------------------------------
+
+Weight Vector 92:
+Weights: [-3.5944881 -2.892232  -1.9397315 -0.8386923]
+Bias: 2.80
+Count (correct predictions): 23
+Percentage of total predictions: 0.26%
+------------------------------
+
+Weight Vector 93:
+Weights: [-3.5300161 -2.431612  -2.7744315 -0.5677023]
+Bias: 2.70
+Count (correct predictions): 211
+Percentage of total predictions: 2.42%
+------------------------------
+
+Weight Vector 94:
+Weights: [-3.2908461 -1.975962  -3.2733115 -0.8575723]
+Bias: 2.80
+Count (correct predictions): 11
+Percentage of total predictions: 0.13%
+------------------------------
+
+Weight Vector 95:
+Weights: [-3.6665761 -2.805122  -2.2429915 -0.8195133]
+Bias: 2.90
+Count (correct predictions): 37
+Percentage of total predictions: 0.42%
+------------------------------
+
+Weight Vector 96:
+Weights: [-3.6504681 -2.158882  -3.0787215 -0.6673533]
+Bias: 2.80
+Count (correct predictions): 27
+Percentage of total predictions: 0.31%
+------------------------------
+
+Weight Vector 97:
+Weights: [-4.0200781 -3.526672  -1.3207715 -0.9291633]
+Bias: 2.90
+Count (correct predictions): 12
+Percentage of total predictions: 0.14%
+------------------------------
+
+Weight Vector 98:
+Weights: [-3.9305661 -3.049292  -1.8050815 -1.4882533]
+Bias: 3.00
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 99:
+Weights: [-3.9825131 -2.722962  -2.1140315 -1.3897613]
+Bias: 2.90
+Count (correct predictions): 113
+Percentage of total predictions: 1.30%
+------------------------------
+
+Weight Vector 100:
+Weights: [-4.0154331 -2.277442  -2.5712115 -1.2908813]
+Bias: 2.80
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 101:
+Weights: [-3.8123331 -2.092242  -2.8724215 -1.290581 ]
+Bias: 2.90
+Count (correct predictions): 38
+Percentage of total predictions: 0.44%
+------------------------------
+
+Weight Vector 102:
+Weights: [-3.6105631 -1.912422  -3.1682315 -1.269591 ]
+Bias: 3.00
+Count (correct predictions): 49
+Percentage of total predictions: 0.56%
+------------------------------
+
+Weight Vector 103:
+Weights: [-3.6826311 -2.588252  -2.5841515 -1.207222 ]
+Bias: 3.10
+Count (correct predictions): 6
+Percentage of total predictions: 0.07%
+------------------------------
+
+Weight Vector 104:
+Weights: [-3.6039411 -3.544882  -2.2054815 -0.456882 ]
+Bias: 3.00
+Count (correct predictions): 29
+Percentage of total predictions: 0.33%
+------------------------------
+
+Weight Vector 105:
+Weights: [-4.2375811 -2.616402  -2.204054  -1.135322 ]
+Bias: 3.10
+Count (correct predictions): 52
+Percentage of total predictions: 0.60%
+------------------------------
+
+Weight Vector 106:
+Weights: [-4.0925711 -2.255732  -2.609624  -1.294982 ]
+Bias: 3.20
+Count (correct predictions): 3
+Percentage of total predictions: 0.03%
+------------------------------
+
+Weight Vector 107:
+Weights: [-3.8277811 -3.269472  -2.476524  -0.747912 ]
+Bias: 3.10
+Count (correct predictions): 24
+Percentage of total predictions: 0.28%
+------------------------------
+
+Weight Vector 108:
+Weights: [-3.6083511 -2.814442  -2.974124  -1.020452 ]
+Bias: 3.20
+Count (correct predictions): 125
+Percentage of total predictions: 1.43%
+------------------------------
+
+Weight Vector 109:
+Weights: [-3.6412751 -2.368922  -3.431304  -0.921572 ]
+Bias: 3.10
+Count (correct predictions): 6
+Percentage of total predictions: 0.07%
+------------------------------
+
+Weight Vector 110:
+Weights: [-3.8123151 -2.846722  -2.810214  -0.881832 ]
+Bias: 3.20
+Count (correct predictions): 38
+Percentage of total predictions: 0.44%
+------------------------------
+
+Weight Vector 111:
+Weights: [-3.8642651 -2.520392  -3.119164  -0.783342 ]
+Bias: 3.10
+Count (correct predictions): 13
+Percentage of total predictions: 0.15%
+------------------------------
+
+Weight Vector 112:
+Weights: [-4.1784951 -3.824042  -1.551434  -0.849507 ]
+Bias: 3.20
+Count (correct predictions): 2
+Percentage of total predictions: 0.02%
+------------------------------
+
+Weight Vector 113:
+Weights: [-4.3510651 -3.377072  -2.373624  -0.668777 ]
+Bias: 3.10
+Count (correct predictions): 6
+Percentage of total predictions: 0.07%
+------------------------------
+
+Weight Vector 114:
+Weights: [-4.4440351 -2.997362  -2.837914  -0.639207 ]
+Bias: 3.00
+Count (correct predictions): 25
+Percentage of total predictions: 0.29%
+------------------------------
+
+Weight Vector 115:
+Weights: [-4.2760451 -2.576682  -3.291894  -0.878517 ]
+Bias: 3.10
+Count (correct predictions): 20
+Percentage of total predictions: 0.23%
+------------------------------
+
+Weight Vector 116:
+Weights: [-4.5990951 -3.298032  -2.127564  -0.97313  ]
+Bias: 3.20
+Count (correct predictions): 23
+Percentage of total predictions: 0.26%
+------------------------------
+
+Weight Vector 117:
+Weights: [-4.5346231 -2.837412  -2.962264  -0.70214  ]
+Bias: 3.10
+Count (correct predictions): 49
+Percentage of total predictions: 0.56%
+------------------------------
+
+Weight Vector 118:
+Weights: [-4.3613131 -2.441972  -3.436384  -0.95231  ]
+Bias: 3.20
+Count (correct predictions): 35
+Percentage of total predictions: 0.40%
+------------------------------
+
+Weight Vector 119:
+Weights: [-4.2826231 -3.398602  -3.057714  -0.20197  ]
+Bias: 3.10
+Count (correct predictions): 5
+Percentage of total predictions: 0.06%
+------------------------------
+
+Weight Vector 120:
+Weights: [-4.1318531 -3.202642  -3.363554  -0.214213 ]
+Bias: 3.20
+Count (correct predictions): 122
+Percentage of total predictions: 1.40%
+------------------------------
+
+Weight Vector 121:
+Weights: [-3.8926831 -2.746992  -3.862434  -0.504083 ]
+Bias: 3.30
+Count (correct predictions): 21
+Percentage of total predictions: 0.24%
+------------------------------
+
+Weight Vector 122:
+Weights: [-4.2532131 -3.344392  -2.853274  -0.586929 ]
+Bias: 3.40
+Count (correct predictions): 27
+Percentage of total predictions: 0.31%
+------------------------------
+
+Weight Vector 123:
+Weights: [-4.2371051 -2.698152  -3.689004  -0.434769 ]
+Bias: 3.30
+Count (correct predictions): 27
+Percentage of total predictions: 0.31%
+------------------------------
+
+Weight Vector 124:
+Weights: [-4.6067151 -4.065942  -1.931054  -0.696579 ]
+Bias: 3.40
+Count (correct predictions): 12
+Percentage of total predictions: 0.14%
+------------------------------
+
+Weight Vector 125:
+Weights: [-4.5172031 -3.588562  -2.415364  -1.255669 ]
+Bias: 3.50
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 126:
+Weights: [-4.5691501 -3.262232  -2.724314  -1.157177 ]
+Bias: 3.40
+Count (correct predictions): 113
+Percentage of total predictions: 1.30%
+------------------------------
+
+Weight Vector 127:
+Weights: [-4.6020701 -2.816712  -3.181494  -1.058297 ]
+Bias: 3.30
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 128:
+Weights: [-4.3989701 -2.631512  -3.482704  -1.0579967]
+Bias: 3.40
+Count (correct predictions): 38
+Percentage of total predictions: 0.44%
+------------------------------
+
+Weight Vector 129:
+Weights: [-4.1972001 -2.451692  -3.778514  -1.0370067]
+Bias: 3.50
+Count (correct predictions): 52
+Percentage of total predictions: 0.60%
+------------------------------
+
+Weight Vector 130:
+Weights: [-4.3811101 -3.360522  -2.854354  -1.0474387]
+Bias: 3.60
+Count (correct predictions): 84
+Percentage of total predictions: 0.96%
+------------------------------
+
+Weight Vector 131:
+Weights: [-4.2361001 -2.999852  -3.259924  -1.2070987]
+Bias: 3.70
+Count (correct predictions): 152
+Percentage of total predictions: 1.74%
+------------------------------
+
+Weight Vector 132:
+Weights: [-4.2690241 -2.554332  -3.717104  -1.1082187]
+Bias: 3.60
+Count (correct predictions): 6
+Percentage of total predictions: 0.07%
+------------------------------
+
+Weight Vector 133:
+Weights: [-4.4400641 -3.032132  -3.096014  -1.0684787]
+Bias: 3.70
+Count (correct predictions): 38
+Percentage of total predictions: 0.44%
+------------------------------
+
+Weight Vector 134:
+Weights: [-4.4920141 -2.705802  -3.404964  -0.9699887]
+Bias: 3.60
+Count (correct predictions): 49
+Percentage of total predictions: 0.56%
+------------------------------
+
+Weight Vector 135:
+Weights: [-4.5439641 -2.379472  -3.713914  -0.8714987]
+Bias: 3.50
+Count (correct predictions): 17
+Percentage of total predictions: 0.19%
+------------------------------
+
+Weight Vector 136:
+Weights: [-4.8670141 -3.100822  -2.549584  -0.9661117]
+Bias: 3.60
+Count (correct predictions): 23
+Percentage of total predictions: 0.26%
+------------------------------
+
+Weight Vector 137:
+Weights: [-4.8025421 -2.640202  -3.384284  -0.6951217]
+Bias: 3.50
+Count (correct predictions): 84
+Percentage of total predictions: 0.96%
+------------------------------
+
+Weight Vector 138:
+Weights: [-4.7238521 -3.596832  -3.005614   0.0552183]
+Bias: 3.40
+Count (correct predictions): 5
+Percentage of total predictions: 0.06%
+------------------------------
+
+Weight Vector 139:
+Weights: [-4.5730821 -3.400872  -3.311454   0.0429753]
+Bias: 3.50
+Count (correct predictions): 82
+Percentage of total predictions: 0.94%
+------------------------------
+
+Weight Vector 140:
+Weights: [-4.4993221 -2.915622  -3.791314  -0.5236147]
+Bias: 3.60
+Count (correct predictions): 38
+Percentage of total predictions: 0.44%
+------------------------------
+
+Weight Vector 141:
+Weights: [-4.9370521 -3.467292  -2.697414  -0.5644347]
+Bias: 3.70
+Count (correct predictions): 2
+Percentage of total predictions: 0.02%
+------------------------------
+
+Weight Vector 142:
+Weights: [-4.6978821 -3.011642  -3.196294  -0.8543047]
+Bias: 3.80
+Count (correct predictions): 53
+Percentage of total predictions: 0.61%
+------------------------------
+
+Weight Vector 143:
+Weights: [-4.7498321 -2.685312  -3.505244  -0.7558147]
+Bias: 3.70
+Count (correct predictions): 22
+Percentage of total predictions: 0.25%
+------------------------------
+
+Weight Vector 144:
+Weights: [-5.1194421 -4.053102  -1.747294  -1.0176247]
+Bias: 3.80
+Count (correct predictions): 12
+Percentage of total predictions: 0.14%
+------------------------------
+
+Weight Vector 145:
+Weights: [-5.0299301 -3.575722  -2.231604  -1.5767147]
+Bias: 3.90
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 146:
+Weights: [-5.0818771 -3.249392  -2.540554  -1.4782227]
+Bias: 3.80
+Count (correct predictions): 113
+Percentage of total predictions: 1.30%
+------------------------------
+
+Weight Vector 147:
+Weights: [-5.1147971 -2.803872  -2.997734  -1.3793427]
+Bias: 3.70
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 148:
+Weights: [-4.9116971 -2.618672  -3.298944  -1.3790424]
+Bias: 3.80
+Count (correct predictions): 38
+Percentage of total predictions: 0.44%
+------------------------------
+
+Weight Vector 149:
+Weights: [-4.7099271 -2.438852  -3.594754  -1.3580524]
+Bias: 3.90
+Count (correct predictions): 55
+Percentage of total predictions: 0.63%
+------------------------------
+
+Weight Vector 150:
+Weights: [-4.6312371 -3.395482  -3.216084  -0.6077124]
+Bias: 3.80
+Count (correct predictions): 81
+Percentage of total predictions: 0.93%
+------------------------------
+
+Weight Vector 151:
+Weights: [-4.4862271 -3.034812  -3.621654  -0.7673724]
+Bias: 3.90
+Count (correct predictions): 61
+Percentage of total predictions: 0.70%
+------------------------------
+
+Weight Vector 152:
+Weights: [-4.8220471 -3.758852  -2.477464  -0.8244854]
+Bias: 4.00
+Count (correct predictions): 13
+Percentage of total predictions: 0.15%
+------------------------------
+
+Weight Vector 153:
+Weights: [-4.6730871 -3.415972  -2.880554  -0.9670754]
+Bias: 4.10
+Count (correct predictions): 78
+Percentage of total predictions: 0.89%
+------------------------------
+
+Weight Vector 154:
+Weights: [-4.7060111 -2.970452  -3.337734  -0.8681954]
+Bias: 4.00
+Count (correct predictions): 44
+Percentage of total predictions: 0.50%
+------------------------------
+
+Weight Vector 155:
+Weights: [-4.7579611 -2.644122  -3.646684  -0.7697054]
+Bias: 3.90
+Count (correct predictions): 13
+Percentage of total predictions: 0.15%
+------------------------------
+
+Weight Vector 156:
+Weights: [-5.0721911 -3.947772  -2.078954  -0.8358704]
+Bias: 4.00
+Count (correct predictions): 8
+Percentage of total predictions: 0.09%
+------------------------------
+
+Weight Vector 157:
+Weights: [-5.1651611 -3.568062  -2.543244  -0.8063004]
+Bias: 3.90
+Count (correct predictions): 25
+Percentage of total predictions: 0.29%
+------------------------------
+
+Weight Vector 158:
+Weights: [-4.9971711 -3.147382  -2.997224  -1.0456104]
+Bias: 4.00
+Count (correct predictions): 3
+Percentage of total predictions: 0.03%
+------------------------------
+
+Weight Vector 159:
+Weights: [-5.0491211 -2.821052  -3.306174  -0.9471204]
+Bias: 3.90
+Count (correct predictions): 124
+Percentage of total predictions: 1.42%
+------------------------------
+
+Weight Vector 160:
+Weights: [-4.9704311 -3.777682  -2.927504  -0.1967804]
+Bias: 3.80
+Count (correct predictions): 5
+Percentage of total predictions: 0.06%
+------------------------------
+
+Weight Vector 161:
+Weights: [-4.8196611 -3.581722  -3.233344  -0.2090234]
+Bias: 3.90
+Count (correct predictions): 82
+Percentage of total predictions: 0.94%
+------------------------------
+
+Weight Vector 162:
+Weights: [-4.7459011 -3.096472  -3.713204  -0.7756134]
+Bias: 4.00
+Count (correct predictions): 40
+Percentage of total predictions: 0.46%
+------------------------------
+
+Weight Vector 163:
+Weights: [-4.5067311 -2.640822  -4.212084  -1.0654834]
+Bias: 4.10
+Count (correct predictions): 11
+Percentage of total predictions: 0.13%
+------------------------------
+
+Weight Vector 164:
+Weights: [-4.8824611 -3.469982  -3.181764  -1.0274244]
+Bias: 4.20
+Count (correct predictions): 37
+Percentage of total predictions: 0.42%
+------------------------------
+
+Weight Vector 165:
+Weights: [-4.8663531 -2.823742  -4.017494  -0.8752644]
+Bias: 4.10
+Count (correct predictions): 27
+Percentage of total predictions: 0.31%
+------------------------------
+
+Weight Vector 166:
+Weights: [-5.2359631 -4.191532  -2.259544  -1.1370744]
+Bias: 4.20
+Count (correct predictions): 12
+Percentage of total predictions: 0.14%
+------------------------------
+
+Weight Vector 167:
+Weights: [-5.1464511 -3.714152  -2.743854  -1.6961644]
+Bias: 4.30
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 168:
+Weights: [-5.1983981 -3.387822  -3.052804  -1.5976724]
+Bias: 4.20
+Count (correct predictions): 113
+Percentage of total predictions: 1.30%
+------------------------------
+
+Weight Vector 169:
+Weights: [-5.2313181 -2.942302  -3.509984  -1.4987924]
+Bias: 4.10
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 170:
+Weights: [-5.0282181 -2.757102  -3.811194  -1.4984921]
+Bias: 4.20
+Count (correct predictions): 93
+Percentage of total predictions: 1.07%
+------------------------------
+
+Weight Vector 171:
+Weights: [-4.9495281 -3.713732  -3.432524  -0.7481521]
+Bias: 4.10
+Count (correct predictions): 81
+Percentage of total predictions: 0.93%
+------------------------------
+
+Weight Vector 172:
+Weights: [-4.8045181 -3.353062  -3.838094  -0.9078121]
+Bias: 4.20
+Count (correct predictions): 27
+Percentage of total predictions: 0.31%
+------------------------------
+
+Weight Vector 173:
+Weights: [-4.5850881 -2.898032  -4.335694  -1.1803521]
+Bias: 4.30
+Count (correct predictions): 2
+Percentage of total predictions: 0.02%
+------------------------------
+
+Weight Vector 174:
+Weights: [-4.9872681 -3.728432  -3.080194  -1.3313421]
+Bias: 4.40
+Count (correct predictions): 45
+Percentage of total predictions: 0.52%
+------------------------------
+
+Weight Vector 175:
+Weights: [-4.8383081 -3.385552  -3.483284  -1.4739321]
+Bias: 4.50
+Count (correct predictions): 78
+Percentage of total predictions: 0.89%
+------------------------------
+
+Weight Vector 176:
+Weights: [-4.8712321 -2.940032  -3.940464  -1.3750521]
+Bias: 4.40
+Count (correct predictions): 44
+Percentage of total predictions: 0.50%
+------------------------------
+
+Weight Vector 177:
+Weights: [-4.9231821 -2.613702  -4.249414  -1.2765621]
+Bias: 4.30
+Count (correct predictions): 13
+Percentage of total predictions: 0.15%
+------------------------------
+
+Weight Vector 178:
+Weights: [-5.2374121 -3.917352  -2.681684  -1.3427271]
+Bias: 4.40
+Count (correct predictions): 8
+Percentage of total predictions: 0.09%
+------------------------------
+
+Weight Vector 179:
+Weights: [-5.3303821 -3.537642  -3.145974  -1.3131571]
+Bias: 4.30
+Count (correct predictions): 25
+Percentage of total predictions: 0.29%
+------------------------------
+
+Weight Vector 180:
+Weights: [-5.1623921 -3.116962  -3.599954  -1.5524671]
+Bias: 4.40
+Count (correct predictions): 3
+Percentage of total predictions: 0.03%
+------------------------------
+
+Weight Vector 181:
+Weights: [-5.2143421 -2.790632  -3.908904  -1.4539771]
+Bias: 4.30
+Count (correct predictions): 17
+Percentage of total predictions: 0.19%
+------------------------------
+
+Weight Vector 182:
+Weights: [-5.5373921 -3.511982  -2.744574  -1.5485901]
+Bias: 4.40
+Count (correct predictions): 23
+Percentage of total predictions: 0.26%
+------------------------------
+
+Weight Vector 183:
+Weights: [-5.4729201 -3.051362  -3.579274  -1.2776001]
+Bias: 4.30
+Count (correct predictions): 84
+Percentage of total predictions: 0.96%
+------------------------------
+
+Weight Vector 184:
+Weights: [-5.3942301 -4.007992  -3.200604  -0.5272601]
+Bias: 4.20
+Count (correct predictions): 5
+Percentage of total predictions: 0.06%
+------------------------------
+
+Weight Vector 185:
+Weights: [-5.2434601 -3.812032  -3.506444  -0.5395031]
+Bias: 4.30
+Count (correct predictions): 122
+Percentage of total predictions: 1.40%
+------------------------------
+
+Weight Vector 186:
+Weights: [-5.0042901 -3.356382  -4.005324  -0.8293731]
+Bias: 4.40
+Count (correct predictions): 53
+Percentage of total predictions: 0.61%
+------------------------------
+
+Weight Vector 187:
+Weights: [-5.0562401 -3.030052  -4.314274  -0.7308831]
+Bias: 4.30
+Count (correct predictions): 22
+Percentage of total predictions: 0.25%
+------------------------------
+
+Weight Vector 188:
+Weights: [-5.4258501 -4.397842  -2.556324  -0.9926931]
+Bias: 4.40
+Count (correct predictions): 12
+Percentage of total predictions: 0.14%
+------------------------------
+
+Weight Vector 189:
+Weights: [-5.3363381 -3.920462  -3.040634  -1.5517831]
+Bias: 4.50
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 190:
+Weights: [-5.3882851 -3.594132  -3.349584  -1.4532911]
+Bias: 4.40
+Count (correct predictions): 113
+Percentage of total predictions: 1.30%
+------------------------------
+
+Weight Vector 191:
+Weights: [-5.4212051 -3.148612  -3.806764  -1.3544111]
+Bias: 4.30
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 192:
+Weights: [-5.2181051 -2.963412  -4.107974  -1.3541108]
+Bias: 4.40
+Count (correct predictions): 93
+Percentage of total predictions: 1.07%
+------------------------------
+
+Weight Vector 193:
+Weights: [-5.1394151 -3.920042  -3.729304  -0.6037708]
+Bias: 4.30
+Count (correct predictions): 81
+Percentage of total predictions: 0.93%
+------------------------------
+
+Weight Vector 194:
+Weights: [-4.9944051 -3.559372  -4.134874  -0.7634308]
+Bias: 4.40
+Count (correct predictions): 27
+Percentage of total predictions: 0.31%
+------------------------------
+
+Weight Vector 195:
+Weights: [-4.7749751 -3.104342  -4.632474  -1.0359708]
+Bias: 4.50
+Count (correct predictions): 2
+Percentage of total predictions: 0.02%
+------------------------------
+
+Weight Vector 196:
+Weights: [-5.1771551 -3.934742  -3.376974  -1.1869608]
+Bias: 4.60
+Count (correct predictions): 45
+Percentage of total predictions: 0.52%
+------------------------------
+
+Weight Vector 197:
+Weights: [-5.0281951 -3.591862  -3.780064  -1.3295508]
+Bias: 4.70
+Count (correct predictions): 78
+Percentage of total predictions: 0.89%
+------------------------------
+
+Weight Vector 198:
+Weights: [-5.0611191 -3.146342  -4.237244  -1.2306708]
+Bias: 4.60
+Count (correct predictions): 44
+Percentage of total predictions: 0.50%
+------------------------------
+
+Weight Vector 199:
+Weights: [-5.1130691 -2.820012  -4.546194  -1.1321808]
+Bias: 4.50
+Count (correct predictions): 13
+Percentage of total predictions: 0.15%
+------------------------------
+
+Weight Vector 200:
+Weights: [-5.4272991 -4.123662  -2.978464  -1.1983458]
+Bias: 4.60
+Count (correct predictions): 8
+Percentage of total predictions: 0.09%
+------------------------------
+
+Weight Vector 201:
+Weights: [-5.5202691 -3.743952  -3.442754  -1.1687758]
+Bias: 4.50
+Count (correct predictions): 25
+Percentage of total predictions: 0.29%
+------------------------------
+
+Weight Vector 202:
+Weights: [-5.3522791 -3.323272  -3.896734  -1.4080858]
+Bias: 4.60
+Count (correct predictions): 3
+Percentage of total predictions: 0.03%
+------------------------------
+
+Weight Vector 203:
+Weights: [-5.4042291 -2.996942  -4.205684  -1.3095958]
+Bias: 4.50
+Count (correct predictions): 17
+Percentage of total predictions: 0.19%
+------------------------------
+
+Weight Vector 204:
+Weights: [-5.7272791 -3.718292  -3.041354  -1.4042088]
+Bias: 4.60
+Count (correct predictions): 23
+Percentage of total predictions: 0.26%
+------------------------------
+
+Weight Vector 205:
+Weights: [-5.6628071 -3.257672  -3.876054  -1.1332188]
+Bias: 4.50
+Count (correct predictions): 84
+Percentage of total predictions: 0.96%
+------------------------------
+
+Weight Vector 206:
+Weights: [-5.5841171 -4.214302  -3.497384  -0.3828788]
+Bias: 4.40
+Count (correct predictions): 5
+Percentage of total predictions: 0.06%
+------------------------------
+
+Weight Vector 207:
+Weights: [-5.4333471 -4.018342  -3.803224  -0.3951218]
+Bias: 4.50
+Count (correct predictions): 122
+Percentage of total predictions: 1.40%
+------------------------------
+
+Weight Vector 208:
+Weights: [-5.1941771 -3.562692  -4.302104  -0.6849918]
+Bias: 4.60
+Count (correct predictions): 32
+Percentage of total predictions: 0.37%
+------------------------------
+
+Weight Vector 209:
+Weights: [-5.5028371 -4.226312  -3.248054  -0.7741738]
+Bias: 4.70
+Count (correct predictions): 16
+Percentage of total predictions: 0.18%
+------------------------------
+
+Weight Vector 210:
+Weights: [-5.4867291 -3.580072  -4.083784  -0.6220138]
+Bias: 4.60
+Count (correct predictions): 5
+Percentage of total predictions: 0.06%
+------------------------------
+
+Weight Vector 211:
+Weights: [-5.5386791 -3.253742  -4.392734  -0.5235238]
+Bias: 4.50
+Count (correct predictions): 22
+Percentage of total predictions: 0.25%
+------------------------------
+
+Weight Vector 212:
+Weights: [-5.9082891 -4.621532  -2.634784  -0.7853338]
+Bias: 4.60
+Count (correct predictions): 12
+Percentage of total predictions: 0.14%
+------------------------------
+
+Weight Vector 213:
+Weights: [-5.8187771 -4.144152  -3.119094  -1.3444238]
+Bias: 4.70
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 214:
+Weights: [-5.8707241 -3.817822  -3.428044  -1.2459318]
+Bias: 4.60
+Count (correct predictions): 113
+Percentage of total predictions: 1.30%
+------------------------------
+
+Weight Vector 215:
+Weights: [-5.9036441 -3.372302  -3.885224  -1.1470518]
+Bias: 4.50
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 216:
+Weights: [-5.7005441 -3.187102  -4.186434  -1.1467515]
+Bias: 4.60
+Count (correct predictions): 38
+Percentage of total predictions: 0.44%
+------------------------------
+
+Weight Vector 217:
+Weights: [-5.4987741 -3.007282  -4.482244  -1.1257615]
+Bias: 4.70
+Count (correct predictions): 55
+Percentage of total predictions: 0.63%
+------------------------------
+
+Weight Vector 218:
+Weights: [-5.4200841 -3.963912  -4.103574  -0.3754215]
+Bias: 4.60
+Count (correct predictions): 81
+Percentage of total predictions: 0.93%
+------------------------------
+
+Weight Vector 219:
+Weights: [-5.2750741 -3.603242  -4.509144  -0.5350815]
+Bias: 4.70
+Count (correct predictions): 34
+Percentage of total predictions: 0.39%
+------------------------------
+
+Weight Vector 220:
+Weights: [-5.6571041 -4.908752  -2.813314  -0.7656015]
+Bias: 4.80
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 221:
+Weights: [-6.2051841 -4.090562  -2.785496  -1.2688315]
+Bias: 4.90
+Count (correct predictions): 39
+Percentage of total predictions: 0.45%
+------------------------------
+
+Weight Vector 222:
+Weights: [-6.0562241 -3.747682  -3.188586  -1.4114215]
+Bias: 5.00
+Count (correct predictions): 78
+Percentage of total predictions: 0.89%
+------------------------------
+
+Weight Vector 223:
+Weights: [-6.0891481 -3.302162  -3.645766  -1.3125415]
+Bias: 4.90
+Count (correct predictions): 44
+Percentage of total predictions: 0.50%
+------------------------------
+
+Weight Vector 224:
+Weights: [-6.1410981 -2.975832  -3.954716  -1.2140515]
+Bias: 4.80
+Count (correct predictions): 49
+Percentage of total predictions: 0.56%
+------------------------------
+
+Weight Vector 225:
+Weights: [-6.1930481 -2.649502  -4.263666  -1.1155615]
+Bias: 4.70
+Count (correct predictions): 17
+Percentage of total predictions: 0.19%
+------------------------------
+
+Weight Vector 226:
+Weights: [-6.5160981 -3.370852  -3.099336  -1.2101745]
+Bias: 4.80
+Count (correct predictions): 23
+Percentage of total predictions: 0.26%
+------------------------------
+
+Weight Vector 227:
+Weights: [-6.4516261 -2.910232  -3.934036  -0.9391845]
+Bias: 4.70
+Count (correct predictions): 84
+Percentage of total predictions: 0.96%
+------------------------------
+
+Weight Vector 228:
+Weights: [-6.3729361 -3.866862  -3.555366  -0.1888445]
+Bias: 4.60
+Count (correct predictions): 5
+Percentage of total predictions: 0.06%
+------------------------------
+
+Weight Vector 229:
+Weights: [-6.2221661 -3.670902  -3.861206  -0.2010875]
+Bias: 4.70
+Count (correct predictions): 122
+Percentage of total predictions: 1.40%
+------------------------------
+
+Weight Vector 230:
+Weights: [-5.9829961 -3.215252  -4.360086  -0.4909575]
+Bias: 4.80
+Count (correct predictions): 32
+Percentage of total predictions: 0.37%
+------------------------------
+
+Weight Vector 231:
+Weights: [-6.2916561 -3.878872  -3.306036  -0.5801395]
+Bias: 4.90
+Count (correct predictions): 16
+Percentage of total predictions: 0.18%
+------------------------------
+
+Weight Vector 232:
+Weights: [-6.2755481 -3.232632  -4.141766  -0.4279795]
+Bias: 4.80
+Count (correct predictions): 154
+Percentage of total predictions: 1.77%
+------------------------------
+
+Weight Vector 233:
+Weights: [-6.0724481 -3.047432  -4.442976  -0.4276792]
+Bias: 4.90
+Count (correct predictions): 15
+Percentage of total predictions: 0.17%
+------------------------------
+
+Weight Vector 234:
+Weights: [-6.4741781 -3.878662  -3.197506  -0.5714292]
+Bias: 5.00
+Count (correct predictions): 23
+Percentage of total predictions: 0.26%
+------------------------------
+
+Weight Vector 235:
+Weights: [-6.2724081 -3.698842  -3.493316  -0.5504392]
+Bias: 5.10
+Count (correct predictions): 136
+Percentage of total predictions: 1.56%
+------------------------------
+
+Weight Vector 236:
+Weights: [-6.1273981 -3.338172  -3.898886  -0.7100992]
+Bias: 5.20
+Count (correct predictions): 27
+Percentage of total predictions: 0.31%
+------------------------------
+
+Weight Vector 237:
+Weights: [-5.9079681 -2.883142  -4.396486  -0.9826392]
+Bias: 5.30
+Count (correct predictions): 2
+Percentage of total predictions: 0.02%
+------------------------------
+
+Weight Vector 238:
+Weights: [-6.3101481 -3.713542  -3.140986  -1.1336292]
+Bias: 5.40
+Count (correct predictions): 45
+Percentage of total predictions: 0.52%
+------------------------------
+
+Weight Vector 239:
+Weights: [-6.1611881 -3.370662  -3.544076  -1.2762192]
+Bias: 5.50
+Count (correct predictions): 78
+Percentage of total predictions: 0.89%
+------------------------------
+
+Weight Vector 240:
+Weights: [-6.1941121 -2.925142  -4.001256  -1.1773392]
+Bias: 5.40
+Count (correct predictions): 44
+Percentage of total predictions: 0.50%
+------------------------------
+
+Weight Vector 241:
+Weights: [-6.2460621 -2.598812  -4.310206  -1.0788492]
+Bias: 5.30
+Count (correct predictions): 13
+Percentage of total predictions: 0.15%
+------------------------------
+
+Weight Vector 242:
+Weights: [-6.5602921 -3.902462  -2.742476  -1.1450142]
+Bias: 5.40
+Count (correct predictions): 8
+Percentage of total predictions: 0.09%
+------------------------------
+
+Weight Vector 243:
+Weights: [-6.6532621 -3.522752  -3.206766  -1.1154442]
+Bias: 5.30
+Count (correct predictions): 25
+Percentage of total predictions: 0.29%
+------------------------------
+
+Weight Vector 244:
+Weights: [-6.4852721 -3.102072  -3.660746  -1.3547542]
+Bias: 5.40
+Count (correct predictions): 3
+Percentage of total predictions: 0.03%
+------------------------------
+
+Weight Vector 245:
+Weights: [-6.5372221 -2.775742  -3.969696  -1.2562642]
+Bias: 5.30
+Count (correct predictions): 124
+Percentage of total predictions: 1.42%
+------------------------------
+
+Weight Vector 246:
+Weights: [-6.4585321 -3.732372  -3.591026  -0.5059242]
+Bias: 5.20
+Count (correct predictions): 5
+Percentage of total predictions: 0.06%
+------------------------------
+
+Weight Vector 247:
+Weights: [-6.3077621 -3.536412  -3.896866  -0.5181672]
+Bias: 5.30
+Count (correct predictions): 122
+Percentage of total predictions: 1.40%
+------------------------------
+
+Weight Vector 248:
+Weights: [-6.0685921 -3.080762  -4.395746  -0.8080372]
+Bias: 5.40
+Count (correct predictions): 32
+Percentage of total predictions: 0.37%
+------------------------------
+
+Weight Vector 249:
+Weights: [-6.3772521 -3.744382  -3.341696  -0.8972192]
+Bias: 5.50
+Count (correct predictions): 16
+Percentage of total predictions: 0.18%
+------------------------------
+
+Weight Vector 250:
+Weights: [-6.3611441 -3.098142  -4.177426  -0.7450592]
+Bias: 5.40
+Count (correct predictions): 5
+Percentage of total predictions: 0.06%
+------------------------------
+
+Weight Vector 251:
+Weights: [-6.4130941 -2.771812  -4.486376  -0.6465692]
+Bias: 5.30
+Count (correct predictions): 22
+Percentage of total predictions: 0.25%
+------------------------------
+
+Weight Vector 252:
+Weights: [-6.7827041 -4.139602  -2.728426  -0.9083792]
+Bias: 5.40
+Count (correct predictions): 12
+Percentage of total predictions: 0.14%
+------------------------------
+
+Weight Vector 253:
+Weights: [-6.6931921 -3.662222  -3.212736  -1.4674692]
+Bias: 5.50
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 254:
+Weights: [-6.7451391 -3.335892  -3.521686  -1.3689772]
+Bias: 5.40
+Count (correct predictions): 31
+Percentage of total predictions: 0.36%
+------------------------------
+
+Weight Vector 255:
+Weights: [-6.5592991 -4.124492  -3.355256  -1.1851372]
+Bias: 5.30
+Count (correct predictions): 82
+Percentage of total predictions: 0.94%
+------------------------------
+
+Weight Vector 256:
+Weights: [-6.5922191 -3.678972  -3.812436  -1.0862572]
+Bias: 5.20
+Count (correct predictions): 1
+Percentage of total predictions: 0.01%
+------------------------------
+
+Weight Vector 257:
+Weights: [-6.3891191 -3.493772  -4.113646  -1.0859569]
+Bias: 5.30
+Count (correct predictions): 38
+Percentage of total predictions: 0.44%
+------------------------------
+
+Weight Vector 258:
+Weights: [-6.1873491 -3.313952  -4.409456  -1.0649669]
+Bias: 5.40
+Count (correct predictions): 55
+Percentage of total predictions: 0.63%
+------------------------------
+
+Weight Vector 259:
+Weights: [-6.1086591 -4.270582  -4.030786  -0.3146269]
+Bias: 5.30
+Count (correct predictions): 36
+Percentage of total predictions: 0.41%
+------------------------------
+
+Average Test Error: 1.40%
