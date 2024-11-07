@@ -5,11 +5,14 @@ import numpy as np
 import os
 from datetime import datetime
 
+
 def main():
     parser = argparse.ArgumentParser(description='Run the Perceptron model on bank-note authentication data.')
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument('--standard', action='store_true', help='Run standard perceptron')
     group.add_argument('--voted', action='store_true', help='Run voted perceptron')
+    group.add_argument('--average', action='store_true', help='Run average perceptron')
+    group.add_argument('--compare', action='store_true', help='Compare voted and average perceptron')
     args = parser.parse_args()
 
     # Load and preprocess data
@@ -18,8 +21,21 @@ def main():
     # Train Perceptron
     perceptron = Perceptron(learning_rate=0.1, max_epochs=10)
 
+    if args.average:
+            perceptron.fit(X_train, y_train, variant='average')
+            y_pred = perceptron.predict_average(X_test)
+            
+            # Get and display results
+            avg_weights, avg_bias = perceptron.get_average_weights()
+            print("\nAverage Perceptron Results:")
+            print(f"Average Weights: {avg_weights}")
+            print(f"Average Bias: {avg_bias:.2f}")
+
+            average_error = np.mean(y_pred != y_test)
+            print(f'\nAverage Test Error: {average_error * 100:.2f}%')
+
     if args.standard:
-        perceptron.fit(X_train, y_train, voted=False)
+        perceptron.fit(X_train, y_train, variant=False)
         y_pred = perceptron.predict_standard(X_test)
 
         print(f'Learned Weights: {perceptron.weights}')
@@ -29,7 +45,7 @@ def main():
         print(f'\nAverage Test Error: {average_error * 100:.2f}%')
 
     elif args.voted:
-        perceptron.fit(X_train, y_train, voted=True)
+        perceptron.fit(X_train, y_train, variant=True)
         y_pred = perceptron.predict_voted(X_test)
 
         output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'output')

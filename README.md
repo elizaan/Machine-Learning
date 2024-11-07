@@ -169,9 +169,18 @@ To run the implementation of the Ensemble learning algorithms, follow these step
 
 2. **Run the Main File**: 
    Use the main.py script to plot the cost functions for BGD, SGD all at once. 
-
+   
+   - Standard Peceptron:
    ```bash
-    python src/main.py
+    python src/main.py --standard
+    ```
+   - Voted Peceptron:
+   ```bash
+    python src/main.py --voted
+    ```
+   - Average Peceptron:
+   ```bash
+    python src/main.py --average
     ```
 ## Contact ##
 For any questions or suggestions, feel free to contact:
