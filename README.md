@@ -34,6 +34,16 @@ Machine-Learning/
         │   ├── bias_variance.py
         │   └── random_forest.py
         └── main.py
+└──perceptron/
+   └── src/
+   │   ├── main.py
+   │   ├── perceptron/
+   │   │   ├── init.py
+   │   │   ├── perceptron.py
+   │   │   └── utils.py
+   ├── data/
+   │   ├── train.csv
+   │   └── test.csv
 ```
 
 - **Decision Tree**: Contains the implementation and relevant data for decision tree learning.
@@ -149,6 +159,20 @@ To run the implementation of the Ensemble learning algorithms, follow these step
     python3 src/main.py
     ```
 
+## Commands to run Perceptron
+
+1. **Navigate to the Perceptron Directory**:
+   navigate to the `src` folder to access the source code:
+
+   ```bash
+   cd Machine\ Learning/Perceptron/
+
+2. **Run the Main File**: 
+   Use the main.py script to plot the cost functions for BGD, SGD all at once. 
+
+   ```bash
+    python src/main.py
+    ```
 ## Contact ##
 For any questions or suggestions, feel free to contact:
 

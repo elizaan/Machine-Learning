@@ -1,10 +1,15 @@
 
 import numpy as np
 import pandas as pd
+import os
 
-def load_and_preprocess_data(train_path, test_path):
+def load_and_preprocess_data():
     """Load and preprocess the training and test data from CSV files."""
     # Load data
+    current_dir = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+    train_path = os.path.join(current_dir, 'data', 'train.csv')
+    test_path = os.path.join(current_dir, 'data', 'test.csv')
+    
     train_data = pd.read_csv(train_path, header=None)
     test_data = pd.read_csv(test_path, header=None)
 

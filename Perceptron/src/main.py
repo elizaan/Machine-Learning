@@ -1,18 +1,19 @@
 # main.py
 import argparse
-from perceptron.perceptron import Perceptron
+# from perceptron.perceptron import Perceptron
+# from perceptron.utils import load_and_preprocess_data
+from perceptron import Perceptron
 from perceptron.utils import load_and_preprocess_data
 import numpy as np
 
 def main():
     parser = argparse.ArgumentParser(description='Run the Perceptron model on bank-note authentication data.')
-    # parser.add_argument('--train_path', type=str, required=True, help='Path to the training data CSV file.')
-    # parser.add_argument('--test_path', type=str, required=True, help='Path to the test data CSV file.')
-    parser.add_argument('--data', type=str, required=True, help='Path to the data CSV file.')
-    args = parser.parse_args()
+
+    # parser.add_argument('--data', type=str, required=True, help='Path to the data CSV file.')
+    # args = parser.parse_args()
 
     # Load and preprocess data
-    X_train, y_train, X_test, y_test = load_and_preprocess_data(args.data)
+    X_train, y_train, X_test, y_test = load_and_preprocess_data()
 
     # Train Perceptron
     perceptron = Perceptron(learning_rate=0.1, max_epochs=10)
