@@ -1,3 +1,7 @@
+python -m venv env
+.\env\Scripts\activate
+pip install -r requirements.txt
+
 cd "Decision Tree"
 python src/main.py --data car --depth 6 --et 
 python src/main.py --data car --depth 6 --gi
@@ -19,3 +23,8 @@ python src/main.py --data bank --bv --rf --subset_size 6
 
 cd "Linear Regression"
 python src/main.py
+
+cd "Perceptron"
+python src/main.py --standard
+python src/main.py --voted
+python src/main.py --average
