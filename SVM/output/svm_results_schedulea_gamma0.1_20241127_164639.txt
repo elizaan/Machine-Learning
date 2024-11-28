@@ -1,0 +1,16 @@
+SVM Results (schedule=a, gamma_0=0.1)
+Schedule parameter a=1.0
+==================================================
+
+C = 0.115
+Training Error: 0.1101
+Test Error: 0.1220
+------------------------------
+C = 0.573
+Training Error: 0.0275
+Test Error: 0.0200
+------------------------------
+C = 0.802
+Training Error: 0.0264
+Test Error: 0.0200
+------------------------------

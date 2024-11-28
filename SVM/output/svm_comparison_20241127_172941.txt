@@ -1,0 +1,26 @@
+Linear Kernel Results
+==================================================
+
+
+C = 0.115
+Training Error: 0.0092
+Test Error: 0.0100
+Number of Support Vectors: 45
+------------------------------
+
+C = 0.573
+Training Error: 0.0103
+Test Error: 0.0140
+Number of Support Vectors: 31
+------------------------------
+
+C = 0.802
+Training Error: 0.0115
+Test Error: 0.0140
+Number of Support Vectors: 31
+------------------------------
+
+
+Gaussian Kernel Results
+==================================================
+

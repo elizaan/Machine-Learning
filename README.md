@@ -44,6 +44,15 @@ Machine-Learning/
    ├── data/
    │   ├── train.csv
    │   └── test.csv
+└──SVM/
+   ├── src/
+   │   ├── main.py
+   │   ├── main2.py
+   │   └── svm/
+   │       ├── __init__.py
+   │       ├── svm.py
+   │       └── utils.py
+
 ```
 
 - **Decision Tree**: Contains the implementation and relevant data for decision tree learning.
@@ -181,6 +190,30 @@ To run the implementation of the Ensemble learning algorithms, follow these step
    - Average Peceptron:
    ```bash
     python src/main.py --average
+    ```
+
+## Commands to run 
+
+1. **Navigate to the SVM Directory**:
+   navigate to the `src` folder to access the source code:
+
+   ```bash
+   cd Machine\ Learning/SVM/
+
+2. **Run the Main File**: 
+   Use the main.py script to plot the cost functions for BGD, SGD all at once. 
+
+   2A
+   ```bash
+     python src/main.py --schedule a --gamma0 0.1 --a 1.0
+    ```
+   2B
+   ```bash
+    python src/main.py --schedule b --gamma0 0.1
+    ```
+   3a and 3b
+   ```bash
+    python src/main2.py
     ```
 ## Contact ##
 For any questions or suggestions, feel free to contact:

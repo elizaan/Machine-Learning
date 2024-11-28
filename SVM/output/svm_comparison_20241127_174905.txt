@@ -1,0 +1,124 @@
+Linear Kernel Results
+==================================================
+
+
+C = 0.115
+Training Error: 0.0092
+Test Error: 0.0100
+Number of Support Vectors: 45
+------------------------------
+
+C = 0.573
+Training Error: 0.0103
+Test Error: 0.0140
+Number of Support Vectors: 31
+------------------------------
+
+C = 0.802
+Training Error: 0.0115
+Test Error: 0.0140
+Number of Support Vectors: 31
+------------------------------
+
+
+Gaussian Kernel Results
+==================================================
+
+
+C = 0.115, gamma = 0.1
+Training Error: 0.0608
+Test Error: 0.3920
+Number of Support Vectors: 869
+------------------------------
+
+C = 0.115, gamma = 0.5
+Training Error: 0.0000
+Test Error: 0.0900
+Number of Support Vectors: 825
+------------------------------
+
+C = 0.115, gamma = 1
+Training Error: 0.0000
+Test Error: 0.0220
+Number of Support Vectors: 805
+------------------------------
+
+C = 0.115, gamma = 5
+Training Error: 0.0034
+Test Error: 0.0040
+Number of Support Vectors: 442
+------------------------------
+
+C = 0.115, gamma = 100
+Training Error: 0.0138
+Test Error: 0.0080
+Number of Support Vectors: 290
+------------------------------
+
+C = 0.573, gamma = 0.1
+Training Error: 0.0000
+Test Error: 0.2140
+Number of Support Vectors: 869
+------------------------------
+
+C = 0.573, gamma = 0.5
+Training Error: 0.0000
+Test Error: 0.0140
+Number of Support Vectors: 731
+------------------------------
+
+C = 0.573, gamma = 1
+Training Error: 0.0000
+Test Error: 0.0040
+Number of Support Vectors: 556
+------------------------------
+
+C = 0.573, gamma = 5
+Training Error: 0.0000
+Test Error: 0.0000
+Number of Support Vectors: 208
+------------------------------
+
+C = 0.573, gamma = 100
+Training Error: 0.0034
+Test Error: 0.0040
+Number of Support Vectors: 116
+------------------------------
+
+C = 0.802, gamma = 0.1
+Training Error: 0.0000
+Test Error: 0.1820
+Number of Support Vectors: 868
+------------------------------
+
+C = 0.802, gamma = 0.5
+Training Error: 0.0000
+Test Error: 0.0100
+Number of Support Vectors: 694
+------------------------------
+
+C = 0.802, gamma = 1
+Training Error: 0.0000
+Test Error: 0.0040
+Number of Support Vectors: 528
+------------------------------
+
+C = 0.802, gamma = 5
+Training Error: 0.0000
+Test Error: 0.0000
+Number of Support Vectors: 194
+------------------------------
+
+C = 0.802, gamma = 100
+Training Error: 0.0034
+Test Error: 0.0040
+Number of Support Vectors: 99
+------------------------------
+
+
+Best Results:
+==================================================
+Best parameters: C = 0.573, gamma = 5
+Best training error: 0.0000
+Best test error: 0.0000
+Number of support vectors: 208
