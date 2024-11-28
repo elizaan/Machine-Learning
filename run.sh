@@ -28,3 +28,8 @@ cd "Perceptron"
 python src/main.py --standard
 python src/main.py --voted
 python src/main.py --average
+
+cd "SVM"
+python src/main.py --schedule a --gamma0 0.1 --a 1.0
+python src/main.py --schedule b --gamma0 0.1
+python src/main2.py
