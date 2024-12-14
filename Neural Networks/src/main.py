@@ -1,4 +1,4 @@
-# src/main.py
+
 from neural_networks.utils import create_weights_file
 from neural_networks.neural_network import NeuralNetwork
 import numpy as np

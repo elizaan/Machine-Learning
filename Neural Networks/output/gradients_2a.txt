@@ -1,3 +1,18 @@
+Forward Pass Results:
+==================
+
+Layer 1
+z values: [[ 0. -6.]]
+activations: [[1.         0.5        0.00247262]]
+
+Layer 2
+z values: [[ 0. -2.]]
+activations: [[1.         0.5        0.11920292]]
+
+Layer 3
+z values: [[0.]]
+activations: [[0.5]]
+
 Gradients:
 ==========
 

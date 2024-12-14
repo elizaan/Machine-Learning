@@ -7,6 +7,12 @@ class NeuralNetwork:
         self.layer_sizes = layer_sizes
         self.weights = {}
         self.biases = {}
+
+        # Initialize weights using standard Gaussian distribution
+        for layer in range(1, self.num_layers):
+            prev_size = layer_sizes[layer-1]
+            curr_size = layer_sizes[layer]
+            self.weights[layer] = np.random.randn(prev_size + 1, curr_size)
         
     def load_weights_from_file(self, weight_file):
         # Get absolute path to weights file

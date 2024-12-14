@@ -1,0 +1,13 @@
+Final Results (Random Initialization):
+Width=5, Train Error=0.0597, Test Error=0.0621
+Width=10, Train Error=0.0448, Test Error=0.0461
+Width=25, Train Error=0.0195, Test Error=0.0220
+Width=50, Train Error=0.0023, Test Error=0.0020
+Width=100, Train Error=0.4466, Test Error=0.4429
+
+Final Results (Zero Initialization):
+Width=5, Train Error=0.4466, Test Error=0.4429
+Width=10, Train Error=0.4466, Test Error=0.4429
+Width=25, Train Error=0.4466, Test Error=0.4429
+Width=50, Train Error=0.4466, Test Error=0.4429
+Width=100, Train Error=0.4466, Test Error=0.4429

@@ -1,0 +1,6 @@
+Final Results:
+Width=5, Train Error=0.0195, Test Error=0.0281
+Width=10, Train Error=0.0299, Test Error=0.0321
+Width=25, Train Error=0.1493, Test Error=0.1563
+Width=50, Train Error=0.3249, Test Error=0.3066
+Width=100, Train Error=0.4742, Test Error=0.4870
