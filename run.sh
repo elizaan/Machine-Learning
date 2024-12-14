@@ -33,3 +33,11 @@ cd "SVM"
 python src/main.py --schedule a --gamma0 0.1 --a 1.0
 python src/main.py --schedule b --gamma0 0.1
 python src/main2.py
+
+cd "Logistic Regression"
+python lr.py
+python lr2.py
+
+cd "Neural Networks"
+python src/main.py
+python src/main2.py

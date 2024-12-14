@@ -35,23 +35,42 @@ Machine-Learning/
 │       │   └── random_forest.py
 │       └── main.py
 └── Perceptron/
-   └── src/
-   │   ├── main.py
-   │   ├── perceptron/
-   │   │   ├── init.py
-   │   │   ├── perceptron.py
-   │   │   └── utils.py
-   ├── data/
-   │   ├── train.csv
-   │   └── test.csv
+│  └── src/
+│   │   ├── main.py
+│   │   ├── perceptron/
+│   │   │   ├── init.py
+│   │   │   ├── perceptron.py
+│   │   │   └── utils.py
+│   ├── data/
+│   │   ├── train.csv
+│   │   └── test.csv
 └──SVM/
-   ├── src/
-   │   ├── main.py
-   │   ├── main2.py
-   │   └── svm/
-   │       ├── __init__.py
-   │       ├── svm.py
-   │       └── utils.py
+│   ├── data/
+│   ├── output/
+│   ├── src/
+│   │   ├── main.py
+│   │   ├── main2.py
+│   │   └── svm/
+│   │       ├── __init__.py
+│   │       ├── svm.py
+│   │       ├── dual_svm.py
+│   │       └── utils.py
+└── Neural Networks/
+│   ├── data/
+│   │  ├── train.csv
+│   │  ├── test.csv
+│   │  ├── weights.txt
+│   ├── output/
+│   ├── src/
+│   │   ├── main.py
+│   │ 
+└── Logostic Regression/
+│   ├── data/
+│   │  ├── train.csv
+│   │  ├── test.csv
+│   │  ├── weights.txt
+│   ├── lr.py
+│   ├── lr2.py
 
 ```
 
@@ -192,7 +211,7 @@ To run the implementation of the Ensemble learning algorithms, follow these step
     python src/main.py --average
     ```
 
-## Commands to run 
+## Commands to run SVM
 
 1. **Navigate to the SVM Directory**:
    navigate to the `src` folder to access the source code:
@@ -215,6 +234,43 @@ To run the implementation of the Ensemble learning algorithms, follow these step
    ```bash
     python src/main2.py
     ```
+
+## Commands to run Neural Network
+
+1. **Navigate to the Neural Networks Directory**:
+   navigate to the `src` folder to access the source code:
+
+   ```bash
+   cd Machine\ Learning/"Neural Networks"/
+
+2. **Run the Main File**:  
+
+   2a
+   ```bash
+     python src/main.py 
+    ```
+   2b and 2c
+   ```bash
+    python src/main2.py 
+    ```
+## Commands to run Logistic Regression
+
+1. **Navigate to the Neural Networks Directory**:
+   navigate to the `src` folder to access the source code:
+
+   ```bash
+   cd Machine\ Learning/"Logistic Regression"/
+
+2. **Run the Main File**:  
+
+   3a
+   ```bash
+     python lr.py 
+    ```
+   3b
+   ```bash
+    python lr2.py 
+
 ## Contact ##
 For any questions or suggestions, feel free to contact:
 
